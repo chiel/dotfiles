@@ -1,0 +1,47 @@
+export EDITOR='vim'
+export TERM='xterm-256color'
+
+alias colors='~/scripts/colortest -w -s'
+alias l='ls -AFhl --color=always'
+alias ssh='ssh -A'
+
+# get symbolic name, this is spotify-specific
+symhost=`cat /etc/symbolic_hostname 2> /dev/null`'.d'
+if [ $symhost == '.d' ]; then
+	symhost=`hostname`
+fi
+
+# local
+if [[ $symhost =~ ^chiel-macbook(\.[a-z]+)?$ ]]; then
+	color='35;1'
+	# colours for ls
+	export CLICOLOR=1
+	export LSCOLORS=ExGxcxdxCxegedabagacad
+
+	# define 'l' without --color as it doesn't work on os x
+	alias l='ls -AFhl'
+
+# www.chielkunkels.com
+elif [ $symhost = 'web167.webfaction.com' ]; then
+	color='36;1'
+
+# dev
+elif [[ $symhost =~ ^dev\.[-a-zA-Z0-9]+\.d$ ]]; then
+	color='32;1'
+
+# unstable
+elif [[ $symhost =~ www-[0-9]+\.web\.d$ ]]; then
+	color='36;1'
+
+# testing
+elif [[ $symhost =~ www-[0-9]+\.testing\.d$ ]]; then
+	color='36;1'
+
+# other
+else
+	color='31;1'
+
+fi
+
+# set prompt
+PS1='\e[${color}m\u\e[0m@\e[${color}m${symhost}\e[0m:\e[34;1m\w\e[0m$ '
