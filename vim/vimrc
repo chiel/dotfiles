@@ -86,7 +86,10 @@ autocmd WinLeave * setlocal nocursorline
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Let me know when lines go over 80 chars
-autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
+highlight OverLength ctermbg=red
+match OverLength /\%81v.\+/
+
+"12345678901234567890123456789012345678901234567890123456789012345678901234567890sdadads
 
 " When editing a file, always jump to the last known cursor position.
 autocmd BufReadPost *

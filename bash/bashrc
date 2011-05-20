@@ -13,7 +13,7 @@ fi
 
 # local
 if [[ $symhost =~ ^chiel-macbook(\.[a-z]+)?$ ]]; then
-	color='35;1'
+	c='4'
 	# colours for ls
 	export CLICOLOR=1
 	export LSCOLORS=ExGxcxdxCxegedabagacad
@@ -23,25 +23,25 @@ if [[ $symhost =~ ^chiel-macbook(\.[a-z]+)?$ ]]; then
 
 # www.chielkunkels.com
 elif [ $symhost = 'web167.webfaction.com' ]; then
-	color='36;1'
+	c='6'
 
 # dev
 elif [[ $symhost =~ ^dev\.[-a-zA-Z0-9]+\.d$ ]]; then
-	color='32;1'
+	c='2'
 
 # unstable
 elif [[ $symhost =~ www-[0-9]+\.web\.d$ ]]; then
-	color='36;1'
+	c='3'
 
 # testing
 elif [[ $symhost =~ www-[0-9]+\.testing\.d$ ]]; then
-	color='36;1'
+	c='3'
 
 # other
 else
-	color='31;1'
+	c='1'
 
 fi
 
 # set prompt
-PS1='\e[${color}m\u\e[0m@\e[${color}m${symhost}\e[0m:\e[34;1m\w\e[0m$ '
+PS1="\[\e[0;3${c}m\]\u\[\e[0m\]@\[\e[1;3${c}m\]${symhost}\[\e[0m\]:\[\e[1;36m\]\w\[\e[0m\]\$ "
