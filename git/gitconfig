@@ -1,0 +1,29 @@
+[user]
+	name = Chiel Kunkels
+	email = chiel.kunkels@gmail.com
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
+[core]
+	autocrlf = input
+	safecrlf = true
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log -p
+	amend = commit --amend
+	oneline = log --pretty=oneline
+	both = diff HEAD
+	staged = diff --cached
+	unstaged = diff
+	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[merge]
+	tool = vimdiff
