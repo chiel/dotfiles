@@ -1,0 +1,9 @@
+#!/bin/bash
+d=`dirname $0`
+
+ln -s $d/bash/bashrc ~/.bashrc
+ln -s $d/vim ~/.vim
+ln -s $d/vim/vimrc ~/.vimrc
+ln -s $d/git/gitconfig ~/.gitconfig
+
+echo "Optionally link .bashrc: echo '. ~/.bashrc' >> ~/.profile"
