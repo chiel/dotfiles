@@ -2,10 +2,8 @@ source ~/.dotfiles/git/git-completion.bash
 export EDITOR='vim'
 export TERM='xterm-256color'
 
-alias colors='~/scripts/colortest -w -s'
 alias l='ls -AFhl --color=always'
 alias ssh='ssh -A'
-alias gu='git stash && git pull && git submodule update --init --recursive && git stash pop'
 
 # get symbolic name, this is spotify-specific
 symhost=`cat /etc/symbolic_hostname 2> /dev/null`'.d'
@@ -37,7 +35,7 @@ elif [[ $symhost =~ www-[0-9]+\.web\.d$ ]]; then
 
 # testing
 elif [[ $symhost =~ www-[0-9]+\.testing\.d$ ]]; then
-	c='3'
+	c='5'
 
 # other
 else
