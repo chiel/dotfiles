@@ -12,7 +12,7 @@ if [ $symhost == '.d' ]; then
 fi
 
 # local
-if [[ $symhost =~ ^chiel-macbook(\.[a-z]+)?$ ]]; then
+if [[ $symhost =~ ^parabola(\.[a-z]+)?$ ]]; then
 	c='4'
 	# colours for ls
 	export CLICOLOR=1
