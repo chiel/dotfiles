@@ -22,7 +22,7 @@ if [[ $symhost =~ ^parabola(\.[a-z]+)?$ ]]; then
 	alias l='ls -AFhl'
 
 # www.chielkunkels.com
-elif [ $symhost = 'web167.webfaction.com' ]; then
+elif [ $symhost = 'web187.webfaction.com' ]; then
 	c='6'
 
 # dev
