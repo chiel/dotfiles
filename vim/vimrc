@@ -57,7 +57,7 @@ set encoding=utf-8
 " Turn on syntax highlighting
 syntax on
 " Load colorscheme
-colorscheme fresh
+colorscheme parabola
 
 " ==============================
 " Backups
@@ -86,8 +86,8 @@ autocmd WinLeave * setlocal nocursorline
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Let me know when lines go over 80 chars
-highlight OverLength ctermbg=red
-match OverLength /\%81v.\+/
+"highlight OverLength ctermbg=red
+"match OverLength /\%81v.\+/
 
 "12345678901234567890123456789012345678901234567890123456789012345678901234567890sdadads
 
@@ -109,12 +109,7 @@ map <C-l> <C-W>l
 " Statusline
 " ==============================
 " Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
-
-function! CurDir()
-	let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
-	return curdir
-endfunction
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ \ \ \ Line:\ %l/%L:%c
 
 function! HasPaste()
 	if &paste
