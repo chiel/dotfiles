@@ -1,3 +1,4 @@
+filetype on
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -57,7 +58,7 @@ set encoding=utf-8
 " Turn on syntax highlighting
 syntax on
 " Load colorscheme
-colorscheme parabola
+colorscheme fresh
 
 " ==============================
 " Backups
@@ -81,6 +82,8 @@ vmap <s-tab> <gv
 autocmd BufWinEnter * setlocal cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+
+autocmd BufRead,BufNewFile *.ru set filetype=ruby
 
 " Trim whitespace off line-endings on save
 autocmd BufWritePre * :%s/\s\+$//e

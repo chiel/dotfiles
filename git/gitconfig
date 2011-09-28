@@ -3,7 +3,7 @@ name = Chiel Kunkels
 email = chiel.kunkels@gmail.com
 
 [core]
-excludesfile = "~/.gitignore"
+excludesfile = ~/.gitignore
 autocrlf = input
 safecrlf = true
 
@@ -46,7 +46,7 @@ meld = difftool -t meld
 guilt = "!f(){ git log --pretty='format:%an <%ae>' $@ | sort | uniq -c | sort -rn; }; f"
 
 [merge]
-tool = meld
+tool = vimdiff3
 
 [mergetool]
 prompt = false
@@ -105,5 +105,8 @@ author = green default normal
 main-revgraph = yellow default normal
 pp-commit = magenta default bold
 diff-chunk = magenta default bold
+
+[mergetool "vimdiff3"]
+cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 
 # vim: ft=conf:
