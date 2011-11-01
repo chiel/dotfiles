@@ -12,7 +12,7 @@ if [ $symhost == '.d' ]; then
 fi
 
 # local
-if [[ $symhost =~ ^parabola(\.[a-z]+)?$ ]]; then
+if [[ $symhost =~ ^mbp-chiel(\.[a-z]+)?$ ]]; then
 	c='4'
 	# colours for ls
 	export CLICOLOR=1
@@ -20,6 +20,10 @@ if [[ $symhost =~ ^parabola(\.[a-z]+)?$ ]]; then
 
 	# define 'l' without --color as it doesn't work on os x
 	alias l='ls -AFhl'
+
+# rackspace
+elif [[ $symhost =~ ^parabola$ ]]; then
+	c='6'
 
 # www.chielkunkels.com
 elif [ $symhost = 'web187.webfaction.com' ]; then
