@@ -12,11 +12,12 @@ if [ $symhost == '.d' ]; then
 fi
 
 # local
-if [[ $symhost =~ ^mbp-chiel(\.[a-z]+)?$ ]]; then
+if [[ $symhost =~ ^chiel-mbp(\.[a-z]+)?$ ]] || [[ $symhost =~ office\.spotify\.net$ ]]; then
 	c='4'
 	# colours for ls
 	export CLICOLOR=1
 	export LSCOLORS=ExGxcxdxCxegedabagacad
+	symhost='local'
 
 	# define 'l' without --color as it doesn't work on os x
 	alias l='ls -AFhl'
