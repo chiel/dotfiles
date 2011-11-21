@@ -20,6 +20,16 @@ hi SpecialKey      ctermfg=235
 hi StatusLine      ctermbg=255 ctermfg=89
 hi StatusLineNC    ctermfg=235 ctermbg=240
 
+" Diffs
+"hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
+"hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
+"hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
+"hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
+hi DiffAdd         ctermbg=237 ctermfg=66 cterm=bold
+hi DiffChange      ctermbg=236
+hi DiffDelete      ctermbg=238 ctermfg=236
+hi DiffText        ctermbg=237 ctermfg=217 cterm=bold
+
 " Comments
 hi Comment         ctermfg=246
 hi Todo            ctermfg=101 ctermbg=234 cterm=bold
@@ -44,10 +54,6 @@ hi Type            ctermfg=186 cterm=bold
 "hi Debug           ctermfg=181   cterm=bold
 "hi Define          ctermfg=223   cterm=bold
 "hi Delimiter       ctermfg=245
-"hi DiffAdd         ctermfg=66    ctermbg=237     cterm=bold
-"hi DiffChange      ctermbg=236
-"hi DiffDelete      ctermfg=236   ctermbg=238
-"hi DiffText        ctermfg=217   ctermbg=237     cterm=bold
 "hi Directory       ctermfg=99   cterm=bold
 "hi ErrorMsg        ctermfg=115   ctermbg=236     cterm=bold
 "hi Exception       ctermfg=249   cterm=bold
