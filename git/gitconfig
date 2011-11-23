@@ -1,6 +1,6 @@
 [user]
 name = Chiel Kunkels
-email = chiel.kunkels@gmail.com
+email = chiel@kunkels.me
 
 [core]
 excludesfile = ~/.gitignore
