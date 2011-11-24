@@ -23,7 +23,7 @@ set laststatus=2
 " No wrapping
 set nowrap
 " Enable the mouse
-set mouse=a
+" set mouse=a
 " Highlight search results
 set hlsearch
 " Show tab characters & when a line is too long
@@ -35,7 +35,6 @@ filetype plugin indent on
 " Use indents for folds & open all, by default
 set foldmethod=indent
 set foldlevelstart=99
-set nofoldenable
 
 " <space> toggles folds opened and closed
 nnoremap <space> za
@@ -59,6 +58,8 @@ set encoding=utf-8
 syntax on
 " Load colorscheme
 colorscheme fresh
+
+inoremap {<CR> {<CR>}<Esc>O
 
 " ==============================
 " Backups
@@ -103,10 +104,14 @@ autocmd BufReadPost *
 " ==============================
 " Moving around
 " ==============================
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+" set scrolloff=1000
+nmap <Left> <C-W>h
+nmap <Down> <C-W>j
+nmap <Up> <C-W>k
+nmap <Right> <C-W>l
+
+nmap n nzz
+nmap N Nzz
 
 " ==============================
 " Statusline

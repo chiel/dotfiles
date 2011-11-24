@@ -1,9 +1,6 @@
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-javascript"]
-	path = vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -25,9 +22,6 @@
 [submodule "vim/bundle/vim-haml"]
 	path = vim/bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
