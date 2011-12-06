@@ -10,7 +10,7 @@ hi Normal          ctermbg=233 ctermfg=253
 
 " UI elements
 hi CursorLine      ctermbg=234 cterm=none
-hi Folded          ctermbg=235 ctermfg=103
+hi Folded          ctermbg=none ctermfg=238
 hi LineNr          ctermbg=235 ctermfg=248
 hi MatchParen      ctermbg=101 ctermbg=228
 hi PMenu           ctermbg=234 ctermfg=230
@@ -21,13 +21,9 @@ hi StatusLine      ctermbg=255 ctermfg=89
 hi StatusLineNC    ctermfg=235 ctermbg=240
 
 " Diffs
-"hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
-"hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
-"hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
-"hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
-hi DiffAdd         ctermbg=237 ctermfg=66 cterm=bold
+hi DiffAdd         ctermbg=22 ctermfg=82 cterm=bold
 hi DiffChange      ctermbg=236
-hi DiffDelete      ctermbg=238 ctermfg=236
+hi DiffDelete      ctermbg=52 ctermfg=52
 hi DiffText        ctermbg=237 ctermfg=217 cterm=bold
 
 " Comments

@@ -4,7 +4,6 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 " nerdtree settings
-let g:NERDTreeMouseMode = 2
 let g:NERDTreeWinSize = 40
 let g:NERDChristmasTree = 1
 let g:NERDTreeHighlightCursorline = 1
@@ -56,6 +55,8 @@ set autoindent
 set encoding=utf-8
 " Turn on syntax highlighting
 syntax on
+" 256 color mode
+set t_Co=256
 " Load colorscheme
 colorscheme fresh
 
@@ -89,17 +90,11 @@ autocmd BufRead,BufNewFile *.ru set filetype=ruby
 " Trim whitespace off line-endings on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Let me know when lines go over 80 chars
-"highlight OverLength ctermbg=red
-"match OverLength /\%81v.\+/
-
-"12345678901234567890123456789012345678901234567890123456789012345678901234567890sdadads
-
 " When editing a file, always jump to the last known cursor position.
-autocmd BufReadPost *
-	\ if line("'\"") > 0 && line("'\"") <= line("$") |
-	\   exe "normal g`\"" |
-	\ endif
+" autocmd BufReadPost *
+" 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+" 	\   exe "normal g`\"" |
+" 	\ endif
 
 " ==============================
 " Moving around
@@ -110,6 +105,11 @@ nmap <Down> <C-W>j
 nmap <Up> <C-W>k
 nmap <Right> <C-W>l
 
+nmap < <C-w><
+nmap - <C-w>-
+nmap + <C-w>+
+nmap > <C-w>>
+
 nmap n nzz
 nmap N Nzz
 
@@ -117,11 +117,12 @@ nmap N Nzz
 " Statusline
 " ==============================
 " Format the statusline
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ \ \ \ Line:\ %l/%L:%c
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ \ \ \ Line:\ %l/%L:%c
+set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %c%%
 
 function! HasPaste()
 	if &paste
-		return 'PASTE MODE  '
+		return '[PM] '
 	else
 		return ''
 	endif
