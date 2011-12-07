@@ -50,4 +50,4 @@ else
 fi
 
 # set prompt
-PS1='\[\e[0;3${c}m\]\u\[\e[0m\]@\[\e[1;3${c}m\]${symhost}\[\e[0m\]:\[\e[1;36m\]\w\[\e[0m\]$(__git_ps1 "(%s)")$ '
+PS1='\[\e[0;3${c}m\]\u\[\e[0m\]@\[\e[1;3${c}m\]${symhost}\[\e[0m\]:\[\e[1;36m\]\w\[\e[0m\]$(__git_ps1 "(%s)")\$ '
