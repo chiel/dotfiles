@@ -6,7 +6,7 @@ alias l='ls -AFhl --color=always'
 alias ssh='ssh -A'
 alias colortest='~/.dotfiles/bash/colortest -w -s -r'
 
-# get symbolic name, this is spotify-specific
+# get symbolic name
 symhost=`cat /etc/symbolic_hostname 2> /dev/null`'.d'
 if [ $symhost == '.d' ]; then
 	symhost=`hostname`
@@ -26,6 +26,11 @@ if [[ $symhost =~ ^chiel-mbp(\.[a-z]+)?$ ]] || [[ $symhost =~ office\.spotify\.n
 # rackspace
 elif [[ $symhost =~ ^parabola$ ]]; then
 	c='6'
+
+# linode
+elif [[ $symhost =~ ^li[0-9]{3}-[0-9]{3}$ ]]; then
+	c='5'
+	symhost='parabol'
 
 # www.chielkunkels.com
 elif [ $symhost = 'web187.webfaction.com' ]; then
