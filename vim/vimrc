@@ -118,7 +118,7 @@ nmap N Nzz
 " ==============================
 " Format the statusline
 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ \ \ \ Line:\ %l/%L:%c
-set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %c%%
+set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %p%%
 
 function! HasPaste()
 	if &paste
