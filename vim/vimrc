@@ -1,141 +1,224 @@
+" ===================================
+" Over time, I've found a lot of different things from a lot of
+" different sources, picking and choosing what I needed.
+"
+" I've tried to divide things up into sections as much as possible
+" I may have failed at some point though. These are the sections:
+" -----------------------------------
+" 1. Behaviour
+" 2. Interface
+" 3. Indentation
+" 4. Keybinds
+" 5. Functions
+" ===================================
+
+" -----------------------------------
+" 1. Behaviour
+" -----------------------------------
 set nocompatible
+
+" Load pathogen bundles
 filetype on
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
-let mapleader=","
-
-" nerdtree settings
-let g:NERDTreeWinSize = 40
-let g:NERDChristmasTree = 1
-let g:NERDTreeHighlightCursorline = 1
-let g:NERDTreeShowHidden = 1
-
-" ==============================
-" Interface stuff
-" ==============================
-" Always open new windows on the right/bottom
-set splitright
-set splitbelow
-" Line numbers
-set number
-" Always display status line
-set laststatus=2
-" No wrapping
-set nowrap
-" Enable the mouse
-" set mouse=a
-" Highlight search results
-set hlsearch
-" Show tab characters & when a line is too long
-set list
-set listchars=tab:\|\ ,extends:>
-" Enable file type detection.
+" Syntax highlighting & filetype detection
+syntax on
 filetype plugin indent on
 
-" Use indents for folds & open all, by default
+" Easier to reach leader key
+let mapleader=","
+
+" Spell check language
+set spelllang=en_gb
+
+" BOM can cause some errors sometimes
+set encoding=utf-8 nobomb
+
+" Don't update display while executing macros
+set lazyredraw
+
+" Reload files when changed externally
+set autoread
+
+" Turn off backups and swap files
+set nobackup noswapfile nowb
+
+" Always open new windows on the right/bottom
+set splitright splitbelow
+
+
+
+" -----------------------------------
+" 2. Interface
+" -----------------------------------
+" 256 color mode
+set t_Co=256
+
+" Colorscheme
+let g:molokai_original=0
+colorscheme molokai
+
+" Line numbers
+set number
+
+" Highlight current line
+set cursorline
+
+" Always show cursor line
+set laststatus=2
+
+" Update the title bar
+set title
+
+" Start scrolling before reaching buffer edges
+set scrolloff=5
+set sidescrolloff=7
+set sidescroll=1
+
+" Search stuff
+set hlsearch
+set incsearch
+set ignorecase smartcase
+
+" Diffs
+set diffopt=filler
+set diffopt+=iwhite
+
+" Folding
 set foldmethod=indent
-set foldlevelstart=99
+set foldnestmax=3
+set nofoldenable
 
-" <space> toggles folds opened and closed
-nnoremap <space> za
+" Show tab characters & when a line is too long
+set list
+set listchars=tab:\|\ ,trail:·,extends:>
 
-" <space> in visual mode creates a fold over the marked range
-vnoremap <space> zf
+" No sound effects
+set noerrorbells
+set visualbell
 
-" ==============================
-" Syntax
-" ==============================
+" Toggle paste mode in insert mode
+set pastetoggle=<leader>p
+
+" Format the statusline
+set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %p%%
+
+function! HasPaste()
+	if &paste
+		return 'PASTE '
+	else
+		return ''
+	endif
+endfunction
+
+
+
+" -----------------------------------
+" 3. Indentation
+" -----------------------------------
 " Set tab display as two spaces, don't expand
 set shiftwidth=2
 set tabstop=2
 set noexpandtab
 set smarttab
+
 " Auto indent stuff
-set autoindent
-" Always encode files as utf-8
-set encoding=utf-8
-" Turn on syntax highlighting
-syntax on
-" 256 color mode
-set t_Co=256
-" Load colorscheme
-colorscheme fresh
+set autoindent smartindent
+set copyindent
 
-" ==============================
-" Backups
-" ==============================
-" Turn off backups and swap files
-set nobackup
-set nowb
-set noswapfile
+" Don't wrap lines
+set nowrap
 
-" ==============================
-" Visual mode
-" ==============================
-" Make tab indent in visual mode, and shift tab undent
-vmap <tab> >gv
-vmap <s-tab> <gv
 
-" ==============================
-" Autocmd stuff
-" ==============================
-" Highlight current line only for active window
-autocmd BufWinEnter * setlocal cursorline
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
 
-autocmd BufRead,BufNewFile *.ru set filetype=ruby
-
-" Trim whitespace off line-endings on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-" When editing a file, always jump to the last known cursor position.
-" autocmd BufReadPost *
-" 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
-" 	\   exe "normal g`\"" |
-" 	\ endif
-
-" ==============================
-" Moving around
-" ==============================
+" -----------------------------------
+" 4. Keybinds
+" -----------------------------------
 " Disable dem arrow keys
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+" Easier buffer switching
 nmap <C-h> <C-W>h
 nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-l> <C-W>l
 
+" Faster scrolling
+nnoremap <C-e> 10<C-e>
+nnoremap <C-y> 10<C-y>
+
+" Duplicate line
+noremap <C-J> Yp
+noremap <C-K> YP
+
+" Easier buffer resizing
 nmap < <C-w><
 nmap - <C-w>-
 nmap + <C-w>+
 nmap > <C-w>>
 
+" Auto-center search results
 nmap n nzz
 nmap N Nzz
 
-" ==============================
-" Statusline
-" ==============================
-" Format the statusline
-" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ \ \ \ Line:\ %l/%L:%c
-set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %p%%
+" Fold with space
+nnoremap <space> za
+vnoremap <space> zf
 
-function! HasPaste()
-	if &paste
-		return '[PM] '
-	else
-		return ''
-	endif
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Make tab indent in visual mode, and shift tab undent
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" Easier commands
+nnoremap ; :
+
+
+
+" -----------------------------------
+" 5. Functions
+" -----------------------------------
+" Trim whitespace off line-endings on save
+autocmd BufWritePre * :call StripWhitespace()
+function! StripWhitespace ()
+	let save_cursor = getpos(".")
+	let old_query = getreg('/')
+	:%s/\s\+$//e
+	call setpos('.', save_cursor)
+	call setreg('/', old_query)
 endfunction
+
+" Show syntax highlighting groups for word under cursor
+" http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+nnoremap <leader>sh :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+" Read .ru files as ruby
+autocmd BufRead,BufNewFile *.ru set filetype=ruby
+
+" When editing a file, always jump to the last known cursor position.
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\   exe "normal g`\"" |
+	\ endif
 
 " Remap the tab key to do autocompletion or indentation depending on the
 " context (from http://www.vim.org/tips/tip.php?tip_id=102)
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
 function! InsertTabWrapper()
     let col = col('.') - 1
     if !col || getline('.')[col - 1] !~ '\k'
@@ -144,5 +227,4 @@ function! InsertTabWrapper()
         return "\<c-p>"
     endif
 endfunction
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <s-tab> <c-n>
+
