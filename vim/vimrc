@@ -1,7 +1,10 @@
+set nocompatible
 filetype on
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+
+let mapleader=","
 
 " nerdtree settings
 let g:NERDTreeWinSize = 40
@@ -60,8 +63,6 @@ set t_Co=256
 " Load colorscheme
 colorscheme fresh
 
-inoremap {<CR> {<CR>}<Esc>O
-
 " ==============================
 " Backups
 " ==============================
@@ -99,11 +100,16 @@ autocmd BufWritePre * :%s/\s\+$//e
 " ==============================
 " Moving around
 " ==============================
-" set scrolloff=1000
-nmap <Left> <C-W>h
-nmap <Down> <C-W>j
-nmap <Up> <C-W>k
-nmap <Right> <C-W>l
+" Disable dem arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+nmap <C-h> <C-W>h
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-l> <C-W>l
 
 nmap < <C-w><
 nmap - <C-w>-
