@@ -42,6 +42,9 @@ set lazyredraw
 " Reload files when changed externally
 set autoread
 
+" Don't use modelines
+set modelines=0
+
 " Turn off backups and swap files
 set nobackup noswapfile nowb
 
@@ -66,6 +69,9 @@ set number
 " Highlight current line
 set cursorline
 
+" Mark column 80
+set colorcolumn=80
+
 " Always show cursor line
 set laststatus=2
 
@@ -78,6 +84,11 @@ set sidescrolloff=7
 set sidescroll=1
 
 " Search stuff
+nnoremap / /\v
+vnoremap / /\v
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
 set hlsearch
 set incsearch
 set ignorecase smartcase
@@ -141,6 +152,10 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 " Easier buffer switching
 nmap <C-h> <C-W>h
@@ -180,6 +195,9 @@ vmap <s-tab> <gv
 
 " Easier commands
 nnoremap ; :
+
+" Escape mode
+inoremap jj <ESC>
 
 
 
