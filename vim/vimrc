@@ -168,8 +168,8 @@ nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
 
 " Duplicate line
-noremap <C-J> Yp
-noremap <C-K> YP
+noremap <leader>dd Yp
+noremap <leader>du YP
 
 " Easier buffer resizing
 nmap < <C-w><
