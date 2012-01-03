@@ -60,19 +60,18 @@ set splitright splitbelow
 set t_Co=256
 
 " Colorscheme
-let g:molokai_original=0
-colorscheme molokai
+colo parabola
 
 " Line numbers
 set number
 
-" Highlight current line
+" Highlight current line & column
 set cursorline
 
 " Mark column 80
 set colorcolumn=80
 
-" Always show cursor line
+" Always show status line
 set laststatus=2
 
 " Update the title bar
@@ -99,6 +98,7 @@ set diffopt+=iwhite
 
 " Folding
 set foldmethod=indent
+set foldlevelstart=99
 set foldnestmax=3
 set nofoldenable
 
@@ -114,7 +114,7 @@ set visualbell
 set pastetoggle=<leader>p
 
 " Format the statusline
-set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Line:\ %l/%L\ -\ %p%%
+set statusline=%{HasPaste()}%f\ %m%r%h\ \ \ \ \ Col:\ %c\ \ \ Row:\ %l/%L\ -\ %p%%
 
 function! HasPaste()
 	if &paste
@@ -129,7 +129,7 @@ endfunction
 " -----------------------------------
 " 3. Indentation
 " -----------------------------------
-" Set tab display as two spaces, don't expand
+" Set tab display as four spaces, don't expand
 set shiftwidth=2
 set tabstop=2
 set noexpandtab
