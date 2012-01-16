@@ -10,8 +10,8 @@ hi Normal           ctermbg=233  ctermfg=254  cterm=none
 
 " UI things
 hi ColorColumn      ctermbg=234
-hi CursorColumn     ctermbg=234
 hi CursorLine       ctermbg=234               cterm=none
+hi Folded          ctermbg=none ctermfg=238
 hi LineNr           ctermbg=235  ctermfg=242  cterm=none
 hi SpecialKey       ctermbg=none ctermfg=236  cterm=none
 hi StatusLine       ctermbg=89   ctermfg=254  cterm=none
