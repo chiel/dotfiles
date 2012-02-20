@@ -17,6 +17,9 @@
 " -----------------------------------
 set nocompatible
 
+" JSL options
+let jslint_command_options='-conf ~/.dotfiles/jsl/jsl.conf -nofilelisting -nocontext -nosummary -nologo -process'
+
 " Load pathogen bundles
 filetype on
 filetype off
@@ -28,7 +31,7 @@ syntax on
 filetype plugin indent on
 
 " Easier to reach leader key
-let mapleader=","
+let mapleader=','
 
 " Spell check language
 set spelllang=en_gb
@@ -65,11 +68,10 @@ colo parabola
 " Line numbers
 set number
 
-" Highlight current line & column
-set cursorline
-
-" Mark column 80
-set colorcolumn=80
+" Highlight current line only for active window
+autocmd BufWinEnter * setlocal cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 " Always show status line
 set laststatus=2
