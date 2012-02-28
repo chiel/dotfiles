@@ -199,8 +199,10 @@ vmap <s-tab> <gv
 nnoremap ; :
 
 " Escape mode
-inoremap jj <ESC>
+inoremap jk <ESC>
 
+" AUto indent braces
+inoremap {<Enter> {<Enter>}<Esc>O}
 
 
 " -----------------------------------
