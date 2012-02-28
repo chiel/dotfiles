@@ -36,6 +36,9 @@ filetype plugin indent on
 " Easier to reach leader key
 let mapleader=','
 
+" This causes you to not be able to delete stuff otherwise, sometimes
+set backspace=2
+
 " Spell check language
 set spelllang=en_gb
 
