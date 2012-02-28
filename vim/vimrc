@@ -20,6 +20,9 @@ set nocompatible
 " JSL options
 let jslint_command_options='-conf ~/.dotfiles/jsl/jsl.conf -nofilelisting -nocontext -nosummary -nologo -process'
 
+" delimitMate
+let delimitMate_expand_cr=1
+
 " Load pathogen bundles
 filetype on
 filetype off
@@ -200,9 +203,6 @@ nnoremap ; :
 
 " Escape mode
 inoremap jk <ESC>
-
-" AUto indent braces
-inoremap {<Enter> {<Enter>}<Esc>O}
 
 
 " -----------------------------------
