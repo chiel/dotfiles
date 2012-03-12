@@ -231,8 +231,9 @@ function! <SID>SynStack()
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" Read .ru files as ruby
+" Read .ru and capfiles as ruby
 autocmd BufRead,BufNewFile *.ru set filetype=ruby
+autocmd BufRead,BufNewFile capfile set filetype=ruby
 
 " When editing a file, always jump to the last known cursor position.
 autocmd BufReadPost *
