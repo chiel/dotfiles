@@ -39,5 +39,8 @@ hi PreProc                       ctermfg=139  cterm=none
 hi Statement                     ctermfg=74   cterm=none
 hi Type                          ctermfg=221  cterm=none
 
+" HTML specific
+hi htmlItalic       ctermbg=none              cterm=none
+
 " Javascript specific
 hi javaScriptParens              ctermfg=74
