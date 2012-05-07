@@ -30,8 +30,8 @@ alias ssh='ssh -A'
 alias colortest='~/.dotfiles/bash/colortest -w -s -r'
 
 # get symbolic name
-symhost=`cat /etc/symbolic_hostname 2> /dev/null`'.d'
-if [ $symhost == '.d' ]; then
+symhost=`cat /etc/symbolic_hostname 2> /dev/null`
+if [ $symhost == '' ]; then
 	symhost=`hostname`
 fi
 
@@ -50,6 +50,9 @@ if [[ $symhost =~ ^chiel-mbp(\.[a-z]+)?$ ]] || [[ $symhost =~ office\.spotify\.n
 elif [[ $symhost =~ ^parabola$ ]]; then
 	c='6'
 
+elif [[ $symhost =~ tinker.io$ ]]; then
+	c='5'
+
 # linode
 elif [[ $symhost =~ ^li[0-9]{3}-[0-9]{3}$ ]]; then
 	c='5'
@@ -60,15 +63,15 @@ elif [ $symhost = 'web187.webfaction.com' ]; then
 	c='6'
 
 # dev
-elif [[ $symhost =~ ^dev\.[-a-zA-Z0-9]+\.d$ ]]; then
+elif [[ $symhost =~ ^dev\.[-a-zA-Z0-9]+ ]]; then
 	c='2'
 
 # unstable
-elif [[ $symhost =~ www-[0-9]+\.web\.d$ ]]; then
+elif [[ $symhost =~ www-[0-9]+\.web ]]; then
 	c='3'
 
 # testing
-elif [[ $symhost =~ www-[0-9]+\.testing\.d$ ]]; then
+elif [[ $symhost =~ www-[0-9]+\.testing ]]; then
 	c='5'
 
 # other
