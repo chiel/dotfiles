@@ -6,10 +6,12 @@
 " I may have failed at some point though. These are the sections:
 " -----------------------------------
 " 1. Behaviour
-" 2. Interface
-" 3. Indentation
-" 4. Keybinds
-" 5. Functions
+" 2. Plugins
+" 3. Interface
+" 4. Indentation
+" 5. Keybinds
+" 6. Functions
+" 7. File types
 " ===================================
 
 " -----------------------------------
@@ -26,8 +28,7 @@ let delimitMate_expand_cr=1
 " Load pathogen bundles
 filetype on
 filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " Syntax highlighting & filetype detection
 syntax on
@@ -63,7 +64,13 @@ set splitright splitbelow
 
 
 " -----------------------------------
-" 2. Interface
+" 2. Plugins
+" -----------------------------------
+
+
+
+" -----------------------------------
+" 3. Interface
 " -----------------------------------
 " 256 color mode
 set t_Co=256
@@ -135,7 +142,7 @@ endfunction
 
 
 " -----------------------------------
-" 3. Indentation
+" 4. Indentation
 " -----------------------------------
 " Set tab display as four spaces, don't expand
 set shiftwidth=2
@@ -153,7 +160,7 @@ set nowrap
 
 
 " -----------------------------------
-" 4. Keybinds
+" 5. Keybinds
 " -----------------------------------
 " Disable dem arrow keys
 map <up> <nop>
@@ -208,8 +215,20 @@ nnoremap ; :
 inoremap jk <ESC>
 
 
+
 " -----------------------------------
-" 5. Functions
+" 6. File types
+" -----------------------------------
+au BufRead,BufNewFile *.scss set filetype=scss
+
+" Read .ru and capfiles as ruby
+autocmd BufRead,BufNewFile *.ru set filetype=ruby
+autocmd BufRead,BufNewFile capfile set filetype=ruby
+
+
+
+" -----------------------------------
+" 7. Functions
 " -----------------------------------
 " Trim whitespace off line-endings on save
 autocmd BufWritePre * :call StripWhitespace()
@@ -230,10 +249,6 @@ function! <SID>SynStack()
 	endif
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-" Read .ru and capfiles as ruby
-autocmd BufRead,BufNewFile *.ru set filetype=ruby
-autocmd BufRead,BufNewFile capfile set filetype=ruby
 
 " When editing a file, always jump to the last known cursor position.
 autocmd BufReadPost *

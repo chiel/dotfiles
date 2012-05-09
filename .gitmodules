@@ -25,9 +25,6 @@
 [submodule "vim/bundle/delimitMate"]
 	path = vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "vim/bundle/javaScriptLint.vim"]
-	path = vim/bundle/javaScriptLint.vim
-	url = https://github.com/joestelmach/javaScriptLint.vim.git
 [submodule "vim/bundle/vim-nginx"]
 	path = vim/bundle/vim-nginx
 	url = https://github.com/dan-bolsun/vim-nginx.git
@@ -43,3 +40,9 @@
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
 	url = https://github.com/leshill/vim-json.git
+[submodule "vim/bundle/scss-syntax.vim"]
+	path = vim/bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+[submodule "vim/bundle/vim-less"]
+	path = vim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
