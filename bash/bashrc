@@ -31,7 +31,7 @@ alias colortest='~/.dotfiles/bash/colortest -w -s -r'
 
 # get symbolic name
 symhost=`cat /etc/symbolic_hostname 2> /dev/null`
-if [ $symhost == '' ]; then
+if [ "$symhost" == '' ]; then
 	symhost=`hostname`
 fi
 
