@@ -22,6 +22,12 @@ export EDITOR='vim'
 export PAGES='less -R'
 export TERM='xterm-256color'
 
+# git ps1 settings
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUPSTREAM="auto"
+
 # aliases
 alias l='ls -AFhl --color=always'
 alias g='git'
