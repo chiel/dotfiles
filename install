@@ -6,5 +6,6 @@ ln -s $d/vim ~/.vim
 ln -s $d/vim/vimrc ~/.vimrc
 ln -s $d/git/gitconfig ~/.gitconfig
 ln -s $d/git/gitignore ~/.gitignore
+ln -s $d/.jshintrc ~/.jshintrc
 
 echo "Optionally link .bashrc: echo '. ~/.bashrc' >> ~/.profile"

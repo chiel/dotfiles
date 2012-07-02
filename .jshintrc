@@ -1,0 +1,7 @@
+{
+	browser: true,
+	devel: true,
+	mootools: true,
+	node: true,
+	predef: ["require"]
+}
