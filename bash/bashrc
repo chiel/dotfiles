@@ -42,7 +42,7 @@ if [ "$symhost" == '' ]; then
 fi
 
 # local
-if [[ $symhost =~ ^chiel-mbp(\.[a-z]+)?$ ]] || [[ $symhost =~ office\.spotify\.net$ ]]; then
+if [[ $symhost =~ ^chiel(-[a-zA-Z0-9]+)?(\.[a-z]+)?$ ]]; then
 	c='4'
 	# colours for ls
 	export CLICOLOR=1
