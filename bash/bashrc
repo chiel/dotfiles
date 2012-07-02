@@ -68,18 +68,6 @@ elif [[ $symhost =~ ^li[0-9]{3}-[0-9]{3}$ ]]; then
 elif [ $symhost = 'web187.webfaction.com' ]; then
 	c='6'
 
-# dev
-elif [[ $symhost =~ ^dev\.[-a-zA-Z0-9]+ ]]; then
-	c='2'
-
-# unstable
-elif [[ $symhost =~ www-[0-9]+\.web ]]; then
-	c='3'
-
-# testing
-elif [[ $symhost =~ www-[0-9]+\.testing ]]; then
-	c='5'
-
 # other
 else
 	c='1'
