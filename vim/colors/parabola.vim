@@ -17,6 +17,9 @@ hi MatchParen       ctermbg=167  ctermfg=16   cterm=bold
 hi SpecialKey       ctermbg=none ctermfg=236  cterm=none
 hi StatusLine       ctermbg=89   ctermfg=254  cterm=none
 hi StatusLineNC     ctermbg=235  ctermfg=240  cterm=none
+hi TabLineFill      ctermbg=235  ctermfg=240  cterm=none
+hi TabLine          ctermbg=235  ctermfg=240  cterm=none
+hi TabLineSel       ctermbg=89   ctermfg=254  cterm=none
 hi VertSplit        ctermbg=236  ctermfg=240  cterm=none
 
 " Diffs
