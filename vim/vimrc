@@ -232,6 +232,8 @@ au BufRead,BufNewFile capfile set filetype=ruby
 " hard-wrap markdown files
 au BufRead,BufNewFile *.md set wrap tw=80
 
+au FileType ruby setl sw=2 sts=2 et
+
 
 
 " -----------------------------------
