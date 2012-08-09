@@ -227,6 +227,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 " Read .ru and capfiles as ruby
 au BufRead,BufNewFile *.ru set filetype=ruby
 au BufRead,BufNewFile capfile set filetype=ruby
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 " hard-wrap markdown files
 au BufRead,BufNewFile *.md set wrap tw=80
