@@ -1,7 +1,8 @@
 {
-	browser: true,
-	devel: true,
-	mootools: true,
-	node: true,
-	predef: ["require"]
+	"browser": true,
+	"devel": true,
+	"mootools": true,
+	"node": true,
+	"predef": ["require"],
+	"smarttabs": true
 }
