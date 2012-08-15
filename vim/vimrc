@@ -191,10 +191,10 @@ noremap <leader>dd Yp
 noremap <leader>du YP
 
 " Easier buffer resizing
-nmap < <C-w><
-nmap - <C-w>-
-nmap + <C-w>+
-nmap > <C-w>>
+nmap < 5<C-w><
+nmap - 5<C-w>-
+nmap + 5<C-w>+
+nmap > 5<C-w>>
 
 " Auto-center search results
 nmap n nzz
