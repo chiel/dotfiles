@@ -217,6 +217,10 @@ nnoremap ; :
 " Escape mode
 inoremap jk <ESC>
 
+" Tab completion
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
 
 
 " -----------------------------------
@@ -267,8 +271,6 @@ autocmd BufReadPost *
 
 " Remap the tab key to do autocompletion or indentation depending on the
 " context (from http://www.vim.org/tips/tip.php?tip_id=102)
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <s-tab> <c-n>
 function! InsertTabWrapper()
     let col = col('.') - 1
     if !col || getline('.')[col - 1] !~ '\k'
