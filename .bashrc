@@ -1,4 +1,13 @@
-source ~/.dotfiles/git/git-completion.bash
+# paths
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+
+if [ -d "/usr/local" ]; then
+	export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+fi
+
+if [ -d "$HOME/.bin" ]; then
+	export PATH="$HOME/.bin:$PATH"
+fi
 
 # language
 export LANG="en_GB.UTF-8"
@@ -6,23 +15,13 @@ export LANGUAGE="en"
 export LC_CTYPE="en_GB.UTF-8"
 export LC_ALL="en_GB.UTF-8"
 
-# paths
-PATH="/usr/bin:/bin:/usr/sbin:/sbin"
-
-if [ -d "/usr/local" ]; then
-	PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-fi
-
-if [ -d "$HOME/.bin" ]; then
-	PATH="$HOME/.bin:$PATH"
-fi
-
 # editor/pager/term
 export EDITOR='vim'
 export PAGES='less -R'
 export TERM='xterm-256color'
 
 # git ps1 settings
+source ~/.dotfiles/git/git-completion.bash
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWSTASHSTATE=true
