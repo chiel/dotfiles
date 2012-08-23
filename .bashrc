@@ -30,10 +30,8 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 
 # aliases
 alias l='ls -AFhl --color=always'
-alias g='git'
 alias v='vim -O'
 alias ssh='ssh -A'
-alias colortest='~/.dotfiles/bash/colortest -w -s -r'
 
 # get symbolic name
 symhost=`cat /etc/symbolic_hostname 2> /dev/null`
