@@ -14,9 +14,8 @@
 " 7. File types
 " ===================================
 
-" -----------------------------------
-" 1. Behaviour
-" -----------------------------------
+" 1. Behaviour ------------------------------------------------------------ {{{
+
 set nocompatible
 
 " Load pathogen + bundles
@@ -56,11 +55,9 @@ set nobackup noswapfile nowb
 " Always open new windows on the right/bottom
 set splitright splitbelow
 
+" }}}
+" 2. Plugins -------------------------------------------------------------- {{{
 
-
-" -----------------------------------
-" 2. Plugins
-" -----------------------------------
 " delimitMate
 let delimitMate_expand_cr=1
 
@@ -71,11 +68,9 @@ let g:syntastic_enable_signs=0
 let g:syntastic_enable_highlighting=0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['javascript', 'json'], 'passive_filetypes': [] }
 
+" }}}
+" 3. Interface ------------------------------------------------------------ {{{
 
-
-" -----------------------------------
-" 3. Interface
-" -----------------------------------
 " 256 color mode
 set t_Co=256
 
@@ -123,7 +118,8 @@ set nofoldenable
 
 " Show tab characters & when a line is too long
 set list
-set listchars=tab:\|\ ,trail:·,extends:>
+set listchars=tab:\|\ ,trail:·,extends:❯,precedes:❮
+
 
 " No sound effects
 set noerrorbells
@@ -143,11 +139,9 @@ function! HasPaste()
 	endif
 endfunction
 
+" }}}
+" 4. Indentation ---------------------------------------------------------- {{{
 
-
-" -----------------------------------
-" 4. Indentation
-" -----------------------------------
 " Set tab display as four spaces, don't expand
 set shiftwidth=2
 set tabstop=2
@@ -161,11 +155,9 @@ set copyindent
 " Don't wrap lines
 set nowrap
 
+" }}}
+" 5. Keybinds ------------------------------------------------------------- {{{
 
-
-" -----------------------------------
-" 5. Keybinds
-" -----------------------------------
 " Disable dem arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -221,11 +213,9 @@ inoremap jk <ESC>
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
+" }}}
+" 6. File types ----------------------------------------------------------- {{{
 
-
-" -----------------------------------
-" 6. File types
-" -----------------------------------
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Read .ru and capfiles as ruby
@@ -236,13 +226,12 @@ au BufRead,BufNewFile Vagrantfile set filetype=ruby
 " hard-wrap markdown files
 au BufRead,BufNewFile *.md set wrap tw=80
 
+" Two space indents for ruby
 au FileType ruby setl sw=2 sts=2 et
 
+" }}}
+" 7. Functions ------------------------------------------------------------ {{{
 
-
-" -----------------------------------
-" 7. Functions
-" -----------------------------------
 " Trim whitespace off line-endings on save
 autocmd BufWritePre * :call StripWhitespace()
 function! StripWhitespace ()
@@ -279,4 +268,6 @@ function! InsertTabWrapper()
         return "\<c-p>"
     endif
 endfunction
+
+" }}}
 
