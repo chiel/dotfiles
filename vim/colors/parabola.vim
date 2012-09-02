@@ -30,7 +30,7 @@ hi DiffText         ctermbg=237  ctermfg=217  cterm=bold
 
 " Comments
 hi Comment                       ctermfg=242  cterm=none
-hi Todo             ctermbg=89   ctermfg=254  cterm=bold
+hi Todo             ctermbg=none ctermfg=247  cterm=none
 
 " Syntax
 hi Boolean                       ctermfg=173
