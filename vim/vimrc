@@ -207,7 +207,7 @@ vmap <s-tab> <gv
 nnoremap ; :
 
 " Escape mode
-inoremap jk <ESC>
+inoremap jj <ESC>
 
 " Tab completion
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
