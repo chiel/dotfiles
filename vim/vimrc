@@ -216,11 +216,14 @@ inoremap <s-tab> <c-n>
 " }}}
 " 6. File types ----------------------------------------------------------- {{{
 
+au BufRead,BufNewFile *.slab set filetype=html
+
 au BufRead,BufNewFile *.scss set filetype=scss
 
 " Read .ru and capfiles as ruby
 au BufRead,BufNewFile *.ru set filetype=ruby
 au BufRead,BufNewFile capfile set filetype=ruby
+au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 " hard-wrap markdown files
