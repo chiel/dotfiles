@@ -9,6 +9,11 @@ if [ -d "$HOME/.bin" ]; then
 	export PATH="$HOME/.bin:$PATH"
 fi
 
+if [ -d "$HOME/.rbenv/bin" ]; then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
+
 # language
 export LANG="en_GB.UTF-8"
 export LANGUAGE="en"
