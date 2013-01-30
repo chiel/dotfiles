@@ -8,5 +8,6 @@ ln -s $d/vim/vimrc ~/.vimrc
 ln -s $d/git/gitconfig ~/.gitconfig
 ln -s $d/git/gitignore ~/.gitignore
 ln -s $d/.jshintrc ~/.jshintrc
+ln -s $d/.tmux.conf ~/.tmux.conf
 
-echo "Optionally link .bashrc: echo '. ~/.bashrc' >> ~/.profile"
+echo "Optionally link .bashrc: echo '. ~/.bashrc' >> ~/.bash_profile"
