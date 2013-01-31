@@ -3,7 +3,6 @@ export PAGES='less -R'
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
 alias l='ls -AFhl --color=always'
-alias ssh='ssh -A'
 
 	# os x is a special little snowflake... (aka stupid)
 if [ `uname` = 'Darwin' ]; then
