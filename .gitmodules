@@ -64,3 +64,6 @@
 [submodule "vim/bundle/vim-parabola"]
 	path = vim/bundle/vim-parabola
 	url = https://github.com/chielkunkels/vim-parabola.git
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
