@@ -15,7 +15,7 @@ c=1
 
 # host-specific colouring
 host=`hostname`
-if [[ $host =~ ^chiel(-[a-zA-Z0-9]+)?(\.[a-z]+)?$ ]]; then
+if [[ $host =~ ^chiel(-[a-zA-Z0-9]+)?(\.[a-z]+)*$ ]]; then
 	c='4'
 	host='(╯°□°）╯︵ ┻━┻ '
 elif [[ $host =~ ^aenema ]]; then
