@@ -1,7 +1,6 @@
 {
 	"browser": true,
 	"devel": true,
-	"mootools": true,
 	"node": true,
 	"unused": true,
 	"predef": ["require"],
