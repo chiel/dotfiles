@@ -218,7 +218,7 @@ inoremap <s-tab> <c-n>
 " }}}
 " 6. File types ----------------------------------------------------------- {{{
 
-au BufRead,BufNewFile *.slab set filetype=html
+au BufRead,BufNewFile *.slab,*.mu,*.mustache set filetype=html
 
 au BufRead,BufNewFile *.scss set filetype=scss
 
