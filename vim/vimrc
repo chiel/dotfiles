@@ -55,6 +55,8 @@ set nobackup noswapfile nowb
 " Always open new windows on the right/bottom
 set splitright splitbelow
 
+set wildignore+=*/tmp/*,*/.sass-cache/*,*/node_modules/*,*/.git/*,*.so,*.swp,*.zip
+
 " }}}
 " 2. Plugins -------------------------------------------------------------- {{{
 
