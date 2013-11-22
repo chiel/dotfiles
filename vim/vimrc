@@ -179,6 +179,17 @@ nmap <C-j> <C-W>j
 nmap <C-k> <C-W>k
 nmap <C-l> <C-W>l
 
+" Easier tab switching
+nmap <esc>1 1gt
+nmap <esc>2 2gt
+nmap <esc>3 3gt
+nmap <esc>4 4gt
+nmap <esc>5 5gt
+nmap <esc>6 6gt
+nmap <esc>7 7gt
+nmap <esc>8 8gt
+nmap <esc>9 9gt
+
 " Faster scrolling
 nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
