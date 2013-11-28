@@ -243,7 +243,7 @@ au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 " hard-wrap markdown files
-au BufRead,BufNewFile *.md set wrap tw=80 sw=2 sts=2 et
+au BufRead,BufNewFile *.md setl wrap tw=80 sw=2 sts=2 et
 
 " Two space indents for ruby
 au FileType ruby setl sw=2 sts=2 et
