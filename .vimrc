@@ -82,8 +82,8 @@ set t_Co=256
 " Colorscheme
 colo parabola
 
-" Line numbers
-set number
+" No line numbers
+set nonumber
 
 " Highlight current line only for active window
 autocmd BufWinEnter * setlocal cursorline
