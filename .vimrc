@@ -102,8 +102,6 @@ set sidescrolloff=7
 set sidescroll=1
 
 " Search stuff
-nnoremap / /\v
-vnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
