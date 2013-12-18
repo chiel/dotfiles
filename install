@@ -3,7 +3,7 @@ d=`dirname $0`
 
 ln -s $d/.bin ~/.bin
 ln -s $d/.bashrc ~/.bashrc
-ln -s $d/vim ~/.vim
+ln -s $d/.vim ~/.vim
 ln -s $d/.vimrc ~/.vimrc
 ln -s $d/git/gitconfig ~/.gitconfig
 ln -s $d/git/gitignore ~/.gitignore
