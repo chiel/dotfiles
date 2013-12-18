@@ -27,7 +27,7 @@ elif [ $host = 'web187.webfaction.com' ]; then
 fi
 
 # git ps1 settings
-source ~/.dotfiles/git/git-completion.bash
+source ~/.git-completion.bash
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUPSTREAM="auto"
 

@@ -5,8 +5,9 @@ ln -s $d/.bin ~/.bin
 ln -s $d/.bashrc ~/.bashrc
 ln -s $d/.vim ~/.vim
 ln -s $d/.vimrc ~/.vimrc
-ln -s $d/git/gitconfig ~/.gitconfig
-ln -s $d/git/gitignore ~/.gitignore
+ln -s $d/.gitconfig ~/.gitconfig
+ln -s $d/.gitignore ~/.gitignore
+ln -s $d/.git-completion.bash ~/.git-completion.bash
 ln -s $d/.jshintrc ~/.jshintrc
 ln -s $d/.tmux.conf ~/.tmux.conf
 
