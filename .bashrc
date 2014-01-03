@@ -26,10 +26,11 @@ elif [ $host = 'web187.webfaction.com' ]; then
 	c='6'
 fi
 
-# git ps1 settings
+# git completion + prompt
 source ~/.git-completion.bash
+source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_SHOWUPSTREAM='auto'
 
 # set prompt
 PS1='\n\[\e[0;3${c}m\]\u\[\e[0m\] @ \[\e[1;3${c}m\]${host}\[\e[0m\] \[\e[1;36m\]\w\[\e[0m\] $(__git_ps1 "[%s]") \n\$ '
