@@ -61,7 +61,7 @@ set wildignore+=*/tmp/*,*/.sass-cache/*,*/node_modules/*,*/.git/*,*.so,*.swp,*.z
 " 2. Plugins -------------------------------------------------------------- {{{
 
 " ctrlp
-let g:ctrlp_working_path_mode = 'c'
+" let g:ctrlp_working_path_mode = 'ra'
 
 " delimitMate
 let delimitMate_expand_cr=1
