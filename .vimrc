@@ -234,8 +234,6 @@ inoremap <s-tab> <c-n>
 
 au BufRead,BufNewFile *.slab,*.mu,*.mustache set filetype=html
 
-au BufRead,BufNewFile *.scss set filetype=scss
-
 " Read .ru and capfiles as ruby
 au BufRead,BufNewFile *.ru set filetype=ruby
 au BufRead,BufNewFile capfile set filetype=ruby
