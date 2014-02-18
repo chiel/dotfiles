@@ -3,6 +3,6 @@
 	"devel": true,
 	"node": true,
 	"unused": true,
-	"predef": ["require"],
+	"predef": ["require", "describe", "it"],
 	"smarttabs": true
 }
