@@ -75,6 +75,9 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['javascript
 
 let g:gofmt_command="goimports"
 
+"json
+let g:vim_json_syntax_conceal=0
+
 " }}}
 " 3. Interface ------------------------------------------------------------ {{{
 
