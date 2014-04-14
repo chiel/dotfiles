@@ -11,5 +11,6 @@ ln -s $d/.git-completion.bash ~/.git-completion.bash
 ln -s $d/.git-prompt.sh ~/.git-prompt.sh
 ln -s $d/.jshintrc ~/.jshintrc
 ln -s $d/.tmux.conf ~/.tmux.conf
+ln -s $d/.xmonad ~/.xmonad
 
 echo "Optionally link .bashrc: echo '. ~/.bashrc' >> ~/.bash_profile"
