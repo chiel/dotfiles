@@ -4,7 +4,7 @@ export PAGES='less -R'
 
 alias l='ls -AFhl --color=always'
 
-	# os x is a special little snowflake... (aka stupid)
+# os x is a special little snowflake... (aka stupid)
 if [ `uname` = 'Darwin' ]; then
 	export CLICOLOR=1
 	export LSCOLORS=ExGxcxdxCxegedabagacad
@@ -49,4 +49,3 @@ if [ -d "$HOME/dev/go" ]; then
 	export PATH="$GOPATH/bin:$PATH"
 	export PATH="/usr/local/Cellar/go/1.2/libexec/bin:$PATH"
 fi
-
