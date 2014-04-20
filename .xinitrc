@@ -19,7 +19,7 @@ xset r rate 180 60
 setxkbmap -option ctrl:nocaps
 
 # start dropbox
-dropboxd
+[ -f /usr/bin/dropboxd] && dropboxd
 
 # start xmonad
 exec xmonad
