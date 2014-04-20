@@ -1,0 +1,75 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+visible_bell = false
+mouse_autohide = true
+allow_bold = false
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+scrollback_lines = 10000
+search_wrap = true
+
+# 0.0: opaque, 1.0: transparent
+transparency = 0.5
+; pseudo_transparency = false
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# $BROWSER is used by default
+browser = google-chrome-stable
+
+# word characters used for word selection
+# (default if unset: all graphic non-punctuation/space characters)
+#word_chars = -A-Za-z0-9,./?%&#:_=+@~
+
+[colors]
+foreground = #d6d6d6
+foreground_bold = #d6d6d6
+#foreground_dim = #888888
+background = #121314
+; cursor = #93a1a1
+
+# if unset, will reverse foreground and background
+#highlight = #2f2f2f
+
+# colors from color0 to color254 can be set
+# Black
+color0  = #393939
+color8  = #121212
+# Red
+color1  = #c90c25
+color9  = #f21835
+# Green
+color2  = #2a5b6a
+color10 = #2f4c6a
+# Yellow
+color3  = #54777d
+color11 = #415d62
+# Blue
+color4  = #5c5dad
+color12 = #485999
+# Magenta
+color5  = #6f4484
+color13 = #915eaa
+# Cyan
+color6  = #2b7694
+color14 = #47959e
+# White
+color7  = #d6d6d6
+color15 = #a3a3a3
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
