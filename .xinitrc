@@ -15,6 +15,9 @@ xset -b
 # key repeat
 xset r rate 180 60
 
+# turn caps lock into a control key
+setxkbmap -option ctrl:nocaps
+
 # start dropbox
 dropboxd
 
