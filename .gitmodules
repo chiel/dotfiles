@@ -28,9 +28,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule ".vim/bundle/vim-nginx"]
-	path = .vim/bundle/vim-nginx
-	url = https://github.com/dan-bolsun/vim-nginx.git
 [submodule ".vim/bundle/vim-parabola"]
 	path = .vim/bundle/vim-parabola
 	url = https://github.com/chielkunkels/vim-parabola.git
