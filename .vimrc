@@ -238,7 +238,7 @@ inoremap <s-tab> <c-n>
 au BufRead,BufNewFile *.slab,*.mu,*.mustache set filetype=html
 
 " Read .ru and capfiles as ruby
-au BufRead,BufNewFile *.ru set filetype=ruby
+au BufRead,BufNewFile *.god,*.ru set filetype=ruby
 au BufRead,BufNewFile capfile set filetype=ruby
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
