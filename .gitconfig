@@ -28,6 +28,7 @@
 	ci = commit -v
 	co = checkout
 	st = status -sb
+	amend = commit -v --amend
 	wc = whatchanged --abbrev-commit --date=relative --date-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' -n 45
 	ll = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
 	lla = log --graph --date=relative --topo-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' --all
