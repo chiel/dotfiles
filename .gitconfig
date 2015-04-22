@@ -6,6 +6,7 @@
 	excludesfile = ~/.gitignore
 	autocrlf = input
 	safecrlf = true
+	ignorecase = false
 
 [push]
 	default = tracking
