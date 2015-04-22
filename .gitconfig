@@ -82,20 +82,3 @@
 
 [blame]
 	date = relative
-
-[tig]
-	show-rev-graph = yes
-	show-refs = yes
-	line-graphics = yes
-
-[tig "bind"]
-	generic = G !echo
-	stage = G !echo
-	main = G !echo
-
-[tig "color"]
-	cursor = black green dim
-	author = green default normal
-	main-revgraph = yellow default normal
-	pp-commit = magenta default bold
-	diff-chunk = magenta default bold
