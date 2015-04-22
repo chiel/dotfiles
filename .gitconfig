@@ -17,6 +17,9 @@
 [branch "master"]
 	rebase = true
 
+[rerere]
+	enabled = true
+
 [alias]
 	b = branch
 	t = tag
