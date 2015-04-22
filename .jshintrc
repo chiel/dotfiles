@@ -3,6 +3,6 @@
 	"devel": true,
 	"node": true,
 	"unused": "vars",
-	"predef": ["require", "describe", "it"],
+	"predef": ["require", "describe", "it", "-Promise"],
 	"smarttabs": true
 }
