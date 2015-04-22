@@ -2,7 +2,7 @@
 	"browser": true,
 	"devel": true,
 	"node": true,
-	"unused": true,
+	"unused": "vars",
 	"predef": ["require", "describe", "it"],
 	"smarttabs": true
 }
