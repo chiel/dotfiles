@@ -72,6 +72,7 @@ let g:syntastic_loc_list_height=2
 let g:syntastic_enable_signs=0
 let g:syntastic_enable_highlighting=0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['javascript', 'json', 'ruby'], 'passive_filetypes': [] }
+let g:syntastic_javascript_checkers = [ 'jscs' ]
 
 let g:gofmt_command="goimports"
 
