@@ -147,6 +147,9 @@ function! HasPaste()
 	endif
 endfunction
 
+" load local .vimrc files
+set exrc
+
 " }}}
 " 4. Indentation ---------------------------------------------------------- {{{
 
