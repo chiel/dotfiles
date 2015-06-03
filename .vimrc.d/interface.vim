@@ -8,3 +8,6 @@ colo parabola
 autocmd BufWinEnter * setlocal cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+
+" Always show status line
+set laststatus=2
