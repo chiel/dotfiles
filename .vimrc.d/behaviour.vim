@@ -1,7 +1,26 @@
 set nocompatible
 
-" Load pathogen + bundles
+" load pathogen + bundles
 filetype on
 filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+" syntax highlighting & filetype detection
+syntax on
+filetype plugin indent on
+
+" this causes you to not be able to delete stuff otherwise, sometimes
+set backspace=2
+
+" bom character can cause errors sometimes
+set encoding=utf-8 nobomb
+
+" disable backups and swap files
+set nobackup noswapfile nowritebackup
+
+" split to right and bottom
+set splitright splitbelow
+
+" load local .vimrc files
+set exrc
