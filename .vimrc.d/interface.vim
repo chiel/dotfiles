@@ -16,3 +16,7 @@ set laststatus=2
 set hlsearch
 set incsearch
 set ignorecase smartcase
+
+" show invisibles
+set list
+set listchars=tab:\|\ ,trail:·,extends:❯,precedes:❮
