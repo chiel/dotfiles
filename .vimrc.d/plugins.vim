@@ -18,6 +18,11 @@ let g:airline_mode_map = {
 " ctrlp
 let g:ctrlp_show_hidden = 1
 
+if executable('ag')
+	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+	let g:ctrlp_use_caching = 0
+endif
+
 " multiple-cursors
 let g:multi_cursor_use_default_mapping = 0
 let g:multi_cursor_next_key = '<c-d>'
