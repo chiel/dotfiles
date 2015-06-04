@@ -18,6 +18,11 @@ let g:airline_mode_map = {
 " ctrlp
 let g:ctrlp_show_hidden = 1
 
+" multiple-cursors
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key = '<c-d>'
+let g:multi_cursor_quit_key = '<esc>'
+
 " nerdtree - increased width, show hidden files
 let g:NERDTreeWinSize = 60
 let g:NERDTreeShowHidden = 1
