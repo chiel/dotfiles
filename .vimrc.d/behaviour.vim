@@ -24,3 +24,8 @@ set splitright splitbelow
 
 " load local .vimrc files
 set exrc
+
+" start scrolling before reaching buffer edges
+set scrolloff=5
+set sidescrolloff=7
+set sidescroll=1
