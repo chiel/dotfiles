@@ -29,3 +29,6 @@ set exrc
 set scrolloff=5
 set sidescrolloff=7
 set sidescroll=1
+
+" toggle paste mode in insert mode
+set pastetoggle=<leader>p
