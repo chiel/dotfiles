@@ -11,3 +11,8 @@ autocmd WinLeave * setlocal nocursorline
 
 " always show status line
 set laststatus=2
+
+" search stuff
+set hlsearch
+set incsearch
+set ignorecase smartcase
