@@ -66,6 +66,9 @@ vnoremap <s-tab> <gv
 " easier commands
 nnoremap ; :
 
+" clear highlights easily
+nnoremap <leader><space> :noh<cr>
+
 " toggle nerd tree
 nnoremap <leader>n :NERDTreeToggle<cr>
 
