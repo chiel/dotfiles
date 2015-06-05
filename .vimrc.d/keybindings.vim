@@ -72,6 +72,16 @@ noremap <c-n> :NERDTreeToggle<cr>
 " find current file in nerdtree
 noremap <c-m> :NERDTreeFind<cr>
 
+" show syntax highlighting groups for word under cursor
+" http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+nnoremap <leader>sh :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
 " tab completion
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
