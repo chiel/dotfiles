@@ -40,3 +40,13 @@ au QuickFixCmdPost *grep* cwindow
 if executable('ag')
 	set grepprg=ag\ --nogroup\ --nocolor\ --hidden\ --ignore-dir\ .git
 endif
+
+" trim trailing whitespace on save
+autocmd BufWritePre * :call StripWhitespace()
+function! StripWhitespace ()
+	let save_cursor = getpos(".")
+	let old_query = getreg('/')
+	:%s/\s\+$//e
+	call setpos('.', save_cursor)
+	call setreg('/', old_query)
+endfunction
