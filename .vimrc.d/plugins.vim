@@ -24,6 +24,10 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+" delimitMate
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+
 " multiple-cursors
 let g:multi_cursor_use_default_mapping = 0
 let g:multi_cursor_next_key = '<c-d>'
