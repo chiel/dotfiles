@@ -67,10 +67,10 @@ vnoremap <s-tab> <gv
 nnoremap ; :
 
 " toggle nerd tree
-noremap <c-n> :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " find current file in nerdtree
-noremap <c-m> :NERDTreeFind<cr>
+nnoremap <leader>m :NERDTreeFind<cr>
 
 " show syntax highlighting groups for word under cursor
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
