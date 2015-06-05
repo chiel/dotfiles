@@ -66,6 +66,9 @@ vnoremap <s-tab> <gv
 " easier commands
 nnoremap ; :
 
+" map tab to %
+nmap <tab> %
+
 " clear highlights easily
 nnoremap <leader><space> :noh<cr>
 
