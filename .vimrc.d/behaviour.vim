@@ -50,3 +50,9 @@ function! StripWhitespace ()
 	call setpos('.', save_cursor)
 	call setreg('/', old_query)
 endfunction
+
+" always jump to file's last known cursor position
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\   exe "normal g`\"" |
+	\ endif
