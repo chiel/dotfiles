@@ -32,3 +32,7 @@ set sidescroll=1
 
 " toggle paste mode in insert mode
 set pastetoggle=<leader>p
+
+if executable('ag')
+	set grepprg=ag\ --nogroup\ --nocolor
+endif
