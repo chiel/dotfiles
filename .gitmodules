@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
-[submodule ".vim/bundle/vim-parabola"]
-	path = .vim/bundle/vim-parabola
-	url = https://github.com/chielkunkels/vim-parabola.git
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
@@ -37,3 +34,6 @@
 [submodule ".vim/bundle/vim-matchit"]
 	path = .vim/bundle/vim-matchit
 	url = https://github.com/edsono/vim-matchit.git
+[submodule ".vim/bundle/molokai"]
+	path = .vim/bundle/molokai
+	url = https://github.com/tomasr/molokai.git

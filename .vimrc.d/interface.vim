@@ -2,7 +2,7 @@
 set t_Co=256
 
 " colorscheme
-colo parabola
+colo molokai
 
 " highlight current line only for active window
 autocmd BufWinEnter * setlocal cursorline
