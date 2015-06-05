@@ -33,6 +33,9 @@ set sidescroll=1
 " toggle paste mode in insert mode
 set pastetoggle=<leader>p
 
+" open quickfix window after grepping
+au QuickFixCmdPost *grep* cwindow
+
 if executable('ag')
 	set grepprg=ag\ --nogroup\ --nocolor
 endif
