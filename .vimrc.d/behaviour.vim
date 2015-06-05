@@ -38,5 +38,5 @@ au QuickFixCmdPost *grep* cwindow
 
 " use ag to grep if available
 if executable('ag')
-	set grepprg=ag\ --nogroup\ --nocolor
+	set grepprg=ag\ --nogroup\ --nocolor\ --hidden\ --ignore-dir\ .git
 endif
