@@ -22,6 +22,11 @@ set nobackup noswapfile nowritebackup
 " split to right and bottom
 set splitright splitbelow
 
+" search stuff
+set hlsearch
+set incsearch
+set ignorecase smartcase
+
 " load local .vimrc files
 set exrc
 
