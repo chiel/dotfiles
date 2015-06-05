@@ -3,10 +3,10 @@ noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
-noremap! <up> <nop>
-noremap! <down> <nop>
-noremap! <left> <nop>
-noremap! <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 " easier buffer switching (escape first in insert mode)
 noremap <c-h> <c-w>h
