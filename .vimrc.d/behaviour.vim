@@ -36,6 +36,7 @@ set pastetoggle=<leader>p
 " open quickfix window after grepping
 au QuickFixCmdPost *grep* cwindow
 
+" use ag to grep if available
 if executable('ag')
 	set grepprg=ag\ --nogroup\ --nocolor
 endif
