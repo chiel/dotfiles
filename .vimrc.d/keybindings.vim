@@ -78,6 +78,9 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 " find current file in nerdtree
 nnoremap <leader>m :NERDTreeFind<cr>
 
+" comment with tcomment
+vmap <c-/> gc
+
 " show syntax highlighting groups for word under cursor
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
 nnoremap <leader>sh :call <SID>SynStack()<CR>
