@@ -1,5 +1,27 @@
 {
-	"preset": "google",
 	"requireCurlyBraces": null,
-	"validateIndentation": "\t"
+	"validateIndentation": "\t",
+	"disallowSpaceBeforeBlockStatements": true,
+	"requireSpaceBeforeObjectValues": true,
+	"requireSpacesInsideBrackets": {
+		"allExcept": [ "[", "]", "{", "}" ]
+	},
+	"requireSpaceBetweenArguments": true,
+	"requireSemicolons": true,
+	"requireSpacesInForStatement": true,
+	"requireSpaceBeforeBinaryOperators": true,
+	"requireSpaceAfterBinaryOperators": true,
+	"disallowSpaceAfterKeywords": [ "function" ],
+	"requireSpaceAfterKeywords": [
+		"for",
+		"if",
+		"else",
+		"switch",
+		"case",
+		"try",
+		"catch",
+		"while",
+		"return",
+		"typeof"
+	]
 }
