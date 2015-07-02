@@ -1,17 +1,9 @@
 {
-	"requireCurlyBraces": null,
-	"validateIndentation": "\t",
-	"disallowSpaceBeforeBlockStatements": true,
-	"requireSpaceBeforeObjectValues": true,
-	"requireSpacesInsideBrackets": {
-		"allExcept": [ "[", "]", "{", "}" ]
-	},
-	"requireSpaceBetweenArguments": true,
-	"requireSemicolons": true,
-	"requireSpacesInForStatement": true,
-	"requireSpaceBeforeBinaryOperators": true,
-	"requireSpaceAfterBinaryOperators": true,
 	"disallowSpaceAfterKeywords": [ "function" ],
+	"disallowSpaceBeforeBlockStatements": true,
+	"requireCurlyBraces": null,
+	"requireSemicolons": true,
+	"requireSpaceAfterBinaryOperators": true,
 	"requireSpaceAfterKeywords": [
 		"for",
 		"if",
@@ -23,5 +15,13 @@
 		"while",
 		"return",
 		"typeof"
-	]
+	],
+	"requireSpaceBeforeBinaryOperators": true,
+	"requireSpaceBeforeObjectValues": true,
+	"requireSpaceBetweenArguments": true,
+	"requireSpacesInForStatement": true,
+	"requireSpacesInsideBrackets": {
+		"allExcept": [ "[", "]", "{", "}" ]
+	},
+	"validateIndentation": "\t"
 }
