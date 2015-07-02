@@ -1,3 +1,6 @@
+"easier to reach leader key
+let mapleader = ','
+
 " disable arrow keys
 noremap <up> <nop>
 noremap <down> <nop>
