@@ -1,6 +1,12 @@
 " --- BEHAVIOUR ----------------------
 set nocompatible
 
+" load pathogen + bundles
+filetype on
+filetype off
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 " syntax highlighting & filetype detection
 syntax on
 filetype plugin indent on
