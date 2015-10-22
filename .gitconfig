@@ -40,14 +40,14 @@
 	guilt = "!f(){ git log --pretty='format:%an <%ae>' $@ | sort | uniq -c | sort -rn; }; f"
 
 [merge]
-	tool = vimdiff
+	tool = nvim -d
 
 [mergetool]
 	prompt = false
 
 [diff]
 	renames = true
-	tool = vimdiff
+	tool = nvim -d
 
 [difftool]
 	prompt = false

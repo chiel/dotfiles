@@ -1,4 +1,4 @@
-export EDITOR='vim'
+export EDITOR='nvim'
 export PAGES='less -R'
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
