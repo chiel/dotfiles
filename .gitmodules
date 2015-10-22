@@ -7,6 +7,12 @@
 [submodule ".nvim/bundle/nerdtree"]
 	path = .nvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".nvim/bundle/vim-javascript"]
+	path = .nvim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".nvim/bundle/vim-jsx"]
+	path = .nvim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
 [submodule ".nvim/bundle/vim-parabola"]
 	path = .nvim/bundle/vim-parabola
 	url = https://github.com/chielkunkels/vim-parabola.git
