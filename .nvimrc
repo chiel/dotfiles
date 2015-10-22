@@ -108,6 +108,10 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+" delimitMate
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+
 " neomake
 let g:neomake_javascript_enabled_makers = [ 'jscs' ]
 let g:neomake_jsx_enabled_makers = [ 'jscs' ]
