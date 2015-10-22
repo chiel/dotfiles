@@ -98,6 +98,18 @@ au FileType ruby setl sw=2 sts=2 et
 
 
 
+" --- PLUGINS ------------------------
+
+" ctrlp
+let g:ctrlp_show_hidden = 1
+
+if executable('ag')
+	let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden --ignore-dir .git -g ""'
+	let g:ctrlp_use_caching = 0
+endif
+
+
+
 " --- KEYBINDINGS --------------------
 
 "easier to reach leader key
