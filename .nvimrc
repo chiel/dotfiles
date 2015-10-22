@@ -108,6 +108,10 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+" nerdtree - increased width, show hidden files
+let g:NERDTreeWinSize = 60
+let g:NERDTreeShowHidden = 1
+
 
 
 " --- KEYBINDINGS --------------------
@@ -180,6 +184,12 @@ nmap <tab> %
 
 " clear highlights easily
 nnoremap <leader><space> :noh<cr>
+
+" toggle nerd tree
+nnoremap <leader>n :NERDTreeToggle<cr>
+
+" find current file in nerdtree
+nnoremap <leader>m :NERDTreeFind<cr>
 
 " show syntax highlighting groups for word under cursor
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
