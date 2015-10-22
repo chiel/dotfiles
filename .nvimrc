@@ -108,6 +108,11 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+" neomake
+let g:neomake_javascript_enabled_makers = [ 'jscs' ]
+let g:neomake_jsx_enabled_makers = [ 'jscs' ]
+autocmd! BufWritePost * Neomake
+
 " nerdtree - increased width, show hidden files
 let g:NERDTreeWinSize = 60
 let g:NERDTreeShowHidden = 1
