@@ -19,6 +19,9 @@
 [submodule ".nvim/bundle/nerdtree"]
 	path = .nvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".nvim/bundle/tcomment_vim"]
+	path = .nvim/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
 [submodule ".nvim/bundle/vim-javascript"]
 	path = .nvim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
