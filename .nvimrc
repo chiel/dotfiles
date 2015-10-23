@@ -112,6 +112,10 @@ endif
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
+" gitgutter
+let g:gitgutter_override_sign_column_highlight = 0
+let g:gitgutter_sign_column_always = 1
+
 " multiple-cursors
 let g:multi_cursor_use_default_mapping = 0
 let g:multi_cursor_next_key = '<c-d>'
