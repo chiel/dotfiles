@@ -112,6 +112,12 @@ endif
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
+" multiple-cursors
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key = '<c-d>'
+let g:multi_cursor_skip_key = '<c-x>'
+let g:multi_cursor_quit_key = '<esc>'
+
 " neomake
 let g:neomake_javascript_enabled_makers = [ 'jscs' ]
 let g:neomake_jsx_enabled_makers = [ 'jscs' ]
