@@ -4,6 +4,9 @@
 [submodule ".nvim/bundle/delimitMate"]
 	path = .nvim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule ".nvim/bundle/html5.vim"]
+	path = .nvim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
 [submodule ".nvim/bundle/neomake"]
 	path = .nvim/bundle/neomake
 	url = https://github.com/benekastah/neomake.git
