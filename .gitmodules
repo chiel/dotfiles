@@ -22,6 +22,9 @@
 [submodule ".nvim/bundle/tcomment_vim"]
 	path = .nvim/bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule ".nvim/bundle/ultisnips"]
+	path = .nvim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
 [submodule ".nvim/bundle/vim-gitgutter"]
 	path = .nvim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git

@@ -131,6 +131,13 @@ autocmd! BufWritePost * Neomake
 let g:NERDTreeWinSize = 60
 let g:NERDTreeShowHidden = 1
 
+" ultisnips
+let g:UltiSnipsSnippetsDir = '~/.nvim/snips'
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger = '<c-s>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
 
 
 " --- KEYBINDINGS --------------------
