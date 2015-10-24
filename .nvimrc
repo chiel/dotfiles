@@ -33,6 +33,9 @@ set scrolloff=5
 set sidescrolloff=7
 set sidescroll=1
 
+" open all folds on file open
+set foldlevelstart=99
+
 " trim trailing whitespace on save
 autocmd BufWritePre * :call StripWhitespace()
 function! StripWhitespace ()
@@ -207,6 +210,9 @@ nnoremap ; :
 
 " map tab to %
 nmap <tab> %
+
+" fold with space in normal mode
+nnoremap <space> za
 
 " clear highlights easily
 nnoremap <leader><space> :noh<cr>
