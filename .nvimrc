@@ -93,6 +93,9 @@ set smarttab
 " don't wrap lines
 set nowrap
 
+" syntax highlight inside markdown files
+let g:markdown_fenced_languages = [ 'html', 'js=javascript', 'bash=sh' ]
+
 " ruby filetypes
 au BufRead,BufNewFile *.god,*.ru,*.rake,capfile,Gemfile,Vagrantfile set filetype=ruby
 
