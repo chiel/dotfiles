@@ -25,6 +25,9 @@
 [submodule ".nvim/bundle/ultisnips"]
 	path = .nvim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule ".nvim/bundle/vim-fugitive"]
+	path = .nvim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".nvim/bundle/vim-gitgutter"]
 	path = .nvim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
