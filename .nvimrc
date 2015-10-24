@@ -36,6 +36,9 @@ set sidescroll=1
 " open all folds on file open
 set foldlevelstart=99
 
+" enable syntax-based folding for js
+au FileType javascript setlocal foldenable foldmethod=syntax
+
 " trim trailing whitespace on save
 autocmd BufWritePre * :call StripWhitespace()
 function! StripWhitespace ()
