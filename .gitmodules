@@ -46,3 +46,6 @@
 [submodule ".nvim/bundle/vim-surround"]
 	path = .nvim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule ".nvim/bundle/vim-unimpaired"]
+	path = .nvim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
