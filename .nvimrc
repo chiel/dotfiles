@@ -33,6 +33,9 @@ set scrolloff=5
 set sidescrolloff=7
 set sidescroll=1
 
+" load local .nvimrc files
+set exrc
+
 " open all folds on file open
 set foldlevelstart=99
 
