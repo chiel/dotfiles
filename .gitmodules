@@ -34,6 +34,9 @@
 [submodule ".nvim/bundle/vim-jsx"]
 	path = .nvim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule ".nvim/bundle/vim-markdown-folding"]
+	path = .nvim/bundle/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
 [submodule ".nvim/bundle/vim-multiple-cursors"]
 	path = .nvim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
