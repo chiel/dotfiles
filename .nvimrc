@@ -33,6 +33,9 @@ set scrolloff=5
 set sidescrolloff=7
 set sidescroll=1
 
+" use system clipboard
+set clipboard=unnamed
+
 " load local .nvimrc files
 set exrc
 
