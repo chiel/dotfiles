@@ -1,27 +1,51 @@
 {
-	"disallowSpaceAfterKeywords": [ "function" ],
-	"disallowSpaceBeforeBlockStatements": true,
+	"esnext": true,
+	"fileExtensions": [".js", ".jsx"],
+
+	"disallowMultipleVarDecl": {
+		"allExcept": [ "undefined" ]
+	},
+	"disallowSpacesInAnonymousFunctionExpression": {
+		"beforeOpeningRoundBrace": true
+	},
+	"disallowSpacesInFunctionDeclaration": {
+		"beforeOpeningRoundBrace": true
+	},
+
+	"jsDoc": {
+			"checkAnnotations": "jsdoc3",
+			"checkParamNames": true,
+			"checkRedundantParams": true,
+			"checkRedundantReturns": true,
+			"checkReturnTypes": true,
+			"checkTypes": "capitalizedNativeCase",
+			"requireParamTypes": true,
+			"requireReturnTypes": true
+	},
+
 	"requireCurlyBraces": null,
 	"requireSemicolons": true,
 	"requireSpaceAfterBinaryOperators": true,
 	"requireSpaceAfterKeywords": [
 		"for",
 		"if",
-		"else",
 		"switch",
 		"case",
-		"try",
 		"catch",
 		"while",
 		"return",
 		"typeof"
 	],
 	"requireSpaceBeforeBinaryOperators": true,
+	"requireSpaceBeforeBlockStatements": true,
 	"requireSpaceBeforeObjectValues": true,
 	"requireSpaceBetweenArguments": true,
 	"requireSpacesInForStatement": true,
-	"requireSpacesInsideBrackets": {
+	"requireSpacesInsideArrayBrackets": {
 		"allExcept": [ "[", "]", "{", "}" ]
 	},
-	"validateIndentation": "\t"
+	"validateIndentation": {
+		"value": "\t",
+		"allExcept": [ "comments" ]
+	}
 }
