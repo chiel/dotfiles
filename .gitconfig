@@ -39,15 +39,18 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	guilt = "!f(){ git log --pretty='format:%an <%ae>' $@ | sort | uniq -c | sort -rn; }; f"
 
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $MERGED $REMOTE
+
 [merge]
-	tool = nvim -d
+	tool = vimdiff
 
 [mergetool]
 	prompt = false
 
 [diff]
 	renames = true
-	tool = nvim -d
+	tool = vimdiff
 
 [difftool]
 	prompt = false
