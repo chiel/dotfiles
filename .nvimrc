@@ -239,6 +239,7 @@ nnoremap <leader>m :NERDTreeFind<cr>
 
 " comment with tcomment
 vmap <c-\> gc
+nmap <c-\> gcc
 
 " show syntax highlighting groups for word under cursor
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
