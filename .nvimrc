@@ -186,24 +186,24 @@ noremap! <c-k> <esc><c-w>k
 noremap! <c-l> <esc><c-w>l
 
 " easier tab switching
-noremap <esc>1 1gt
-noremap <esc>2 2gt
-noremap <esc>3 3gt
-noremap <esc>4 4gt
-noremap <esc>5 5gt
-noremap <esc>6 6gt
-noremap <esc>7 7gt
-noremap <esc>8 8gt
-noremap <esc>9 9gt
-noremap! <esc>1 <esc>1gt
-noremap! <esc>2 <esc>2gt
-noremap! <esc>3 <esc>3gt
-noremap! <esc>4 <esc>4gt
-noremap! <esc>5 <esc>5gt
-noremap! <esc>6 <esc>6gt
-noremap! <esc>7 <esc>7gt
-noremap! <esc>8 <esc>8gt
-noremap! <esc>9 <esc>9gt
+noremap <m-1> 1gt
+noremap <m-2> 2gt
+noremap <m-3> 3gt
+noremap <m-4> 4gt
+noremap <m-5> 5gt
+noremap <m-6> 6gt
+noremap <m-7> 7gt
+noremap <m-8> 8gt
+noremap <m-9> 9gt
+noremap! <m-1> <esc>1gt
+noremap! <m-2> <esc>2gt
+noremap! <m-3> <esc>3gt
+noremap! <m-4> <esc>4gt
+noremap! <m-5> <esc>5gt
+noremap! <m-6> <esc>6gt
+noremap! <m-7> <esc>7gt
+noremap! <m-8> <esc>8gt
+noremap! <m-9> <esc>9gt
 
 " easier buffer resizing
 noremap < 5<c-w><
