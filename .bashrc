@@ -1,4 +1,6 @@
 export EDITOR='nvim'
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 export PAGES='less -R'
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
