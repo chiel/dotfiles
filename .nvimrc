@@ -1,5 +1,4 @@
 " --- BEHAVIOUR ----------------------
-set nocompatible
 
 " load pathogen + bundles
 filetype on
