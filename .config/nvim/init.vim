@@ -143,8 +143,8 @@ let g:multi_cursor_skip_key = '<c-x>'
 let g:multi_cursor_quit_key = '<esc>'
 
 " neomake
-let g:neomake_javascript_enabled_makers = [ 'jscs' ]
-let g:neomake_jsx_enabled_makers = [ 'jscs' ]
+let g:neomake_javascript_enabled_makers = [ 'eslint' ]
+let g:neomake_jsx_enabled_makers = [ 'eslint' ]
 autocmd! BufWritePost * Neomake
 
 " nerdtree - increased width, show hidden files
