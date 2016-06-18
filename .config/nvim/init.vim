@@ -149,7 +149,7 @@ let g:neomake_jsx_enabled_makers = [ 'eslint' ]
 autocmd! BufWritePost * Neomake
 
 " nerdtree - increased width, show hidden files
-let g:NERDTreeWinSize = 60
+let g:NERDTreeWinSize = 40
 let g:NERDTreeShowHidden = 1
 
 " ultisnips
