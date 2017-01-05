@@ -19,6 +19,9 @@ set encoding=utf-8 nobomb
 " disable backups and swap files
 set nobackup noswapfile nowritebackup
 
+" don't rename files on save
+set backupcopy=yes
+
 " split to right and bottom
 set splitright splitbelow
 
