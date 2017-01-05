@@ -119,6 +119,9 @@ au BufRead,BufNewFile package.json setl sw=2 sts=2 et
 " two space indents for ruby
 au FileType ruby setl sw=2 sts=2 et
 
+" interpret css as scss
+au FileType css set ft=scss
+
 
 
 " --- PLUGINS ------------------------
