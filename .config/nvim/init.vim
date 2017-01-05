@@ -143,6 +143,9 @@ let g:gitgutter_override_sign_column_highlight = 0
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_max_signs = 3000
 
+" go
+let g:go_fmt_command = 'goimports'
+
 " multiple-cursors
 let g:multi_cursor_use_default_mapping = 0
 let g:multi_cursor_next_key = '<c-d>'
