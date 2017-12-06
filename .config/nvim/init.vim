@@ -108,7 +108,7 @@ let g:markdown_fenced_languages = [ 'html', 'js=javascript', 'bash=sh' ]
 au BufRead,BufNewFile *.god,*.ru,*.rake,capfile,Gemfile,Vagrantfile set filetype=ruby
 
 " json filetypes
-au BufRead,BufNewFile .babelrc set filetype=json
+au BufRead,BufNewFile .babelrc,.eslintrc,.stylelintrc set filetype=json
 
 " hard-wrap markdown files
 au BufRead,BufNewFile *.md setl wrap tw=80 sw=2 sts=2 et
