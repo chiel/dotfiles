@@ -146,6 +146,9 @@ let g:gitgutter_max_signs = 3000
 " go
 let g:go_fmt_command = 'goimports'
 
+" jsx
+let g:jsx_ext_required = 0
+
 " multiple-cursors
 let g:multi_cursor_use_default_mapping = 0
 let g:multi_cursor_next_key = '<c-d>'
