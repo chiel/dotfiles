@@ -54,5 +54,5 @@ fi
 
 if [ -d "$HOME/godev" ]; then
 	export GOPATH="$HOME/godev"
-	export PATH="$PATH:$GOPATH/bin"
+	export PATH="$GOPATH/bin:$PATH"
 fi
