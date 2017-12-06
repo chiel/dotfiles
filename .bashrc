@@ -4,6 +4,10 @@ export HISTFILESIZE=10000
 export PAGES='less -R'
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
+alias k='kubectl -n production'
+alias ka='kubectl -n acceptance'
+alias kc='kubectl -n cache'
+alias ks='kubectl -n staging'
 alias l='ls -AFhl --color=always'
 
 # os x is a special little snowflake... (aka stupid)
