@@ -37,6 +37,7 @@
 	sl = log --decorate --graph --abbrev-commit --color --topo-order --pretty=oneline
 	sla = log --decorate --graph --abbrev-commit --color --topo-order --pretty=oneline --all
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	rl = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%Creset %s (%Cgreen%an%Creset)'
 	guilt = "!f(){ git log --pretty='format:%an <%ae>' $@ | sort | uniq -c | sort -rn; }; f"
 
 [mergetool "vimdiff"]
