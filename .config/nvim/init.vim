@@ -1,10 +1,36 @@
 " --- BEHAVIOUR ----------------------
 
-" load pathogen + bundles
-filetype on
+" prepare for vundle
+set nocompatible
 filetype off
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+
+" load vundle + all plugins
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'airblade/vim-gitgutter'
+Plugin 'chiel/vim-parabola'
+Plugin 'fatih/vim-go'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'nelstrom/vim-markdown-folding'
+Plugin 'neomake/neomake'
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'Raimondi/delimitMate'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'SirVer/ultisnips'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tmhedberg/matchit'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-pathogen'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+
+call vundle#end()
 
 " syntax highlighting & filetype detection
 syntax on
@@ -88,6 +114,8 @@ set laststatus=2
 set list
 set listchars=tab:\|\ ,trail:·,extends:❯,precedes:❮
 
+" show the signcolumn
+set signcolumn=yes
 
 
 " --- FORMATTING ---------------------
@@ -140,7 +168,6 @@ let delimitMate_expand_space = 1
 
 " gitgutter
 let g:gitgutter_override_sign_column_highlight = 0
-let g:gitgutter_sign_column_always = 1
 let g:gitgutter_max_signs = 3000
 
 " go
