@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chiel/vim-parabola'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
