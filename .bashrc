@@ -2,6 +2,8 @@ export EDITOR='nvim'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export PAGES='less -R'
+export LC_ALL=en_GB.UTF-8
+export GPG_TTY=$(tty)
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
 alias k='kubectl -n production'
@@ -45,6 +47,10 @@ export PATH="node_modules/.bin:$PATH"
 
 if [ -d "$HOME/.bin" ]; then
 	export PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.krew" ]; then
+	export PATH="$HOME/.krew/bin:$PATH"
 fi
 
 if [ -d "$HOME/.rbenv" ]; then

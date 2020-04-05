@@ -1,6 +1,7 @@
 [user]
 	name = Chiel Kunkels
 	email = chiel@kunkels.me
+	signingkey = 21693C2E79BCF7EF
 
 [core]
 	excludesfile = ~/.gitignore
@@ -86,3 +87,6 @@
 
 [blame]
 	date = relative
+
+[commit]
+	gpgsign = true
