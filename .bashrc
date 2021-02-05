@@ -3,6 +3,7 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export PAGES='less -R'
 export LC_ALL=en_GB.UTF-8
+export GPG_TTY=$(tty)
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
 alias k='kubectl -n production'
