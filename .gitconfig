@@ -3,7 +3,7 @@
 	email = chiel@kunkels.me
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore.global
 	autocrlf = input
 	safecrlf = true
 	ignorecase = false
