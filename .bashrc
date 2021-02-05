@@ -2,6 +2,7 @@ export EDITOR='nvim'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export PAGES='less -R'
+export LC_ALL=en_GB.UTF-8
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
 alias k='kubectl -n production'
@@ -21,15 +22,9 @@ c=1
 
 # host-specific colouring
 host=`hostname`
-if [[ $host =~ ^chiel(-[-a-zA-Z0-9]+)?(\.[a-z]+)*$ ]]; then
+if [ `uname` = 'Darwin' ]; then
 	c='4'
 	host='(╯°□°）╯︵ ┻━┻ '
-elif [[ $host =~ ^cesaro ]]; then
-	c='6'
-elif [[ $host =~ tinker.io$ ]]; then
-	c='5'
-elif [ $host = 'web187.webfaction.com' ]; then
-	c='6'
 fi
 
 # git completion + prompt
