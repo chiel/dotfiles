@@ -13,6 +13,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'chiel/vim-parabola'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'fatih/vim-go'
+Plugin 'jparise/vim-graphql'
+Plugin 'hashivim/vim-terraform'
 Plugin 'kien/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mxw/vim-jsx'
@@ -20,10 +22,10 @@ Plugin 'nelstrom/vim-markdown-folding'
 Plugin 'neomake/neomake'
 Plugin 'othree/html5.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'Raimondi/delimitMate'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'SirVer/ultisnips'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tmhedberg/matchit'
 Plugin 'tomtom/tcomment_vim'
@@ -95,7 +97,6 @@ autocmd BufReadPost *
 	\ endif
 
 
-
 " --- INTERFACE ----------------------
 
 " 256 color mode
@@ -137,11 +138,14 @@ let g:markdown_fenced_languages = [ 'html', 'js=javascript', 'bash=sh' ]
 " ruby filetypes
 au BufRead,BufNewFile *.god,*.ru,*.rake,capfile,Gemfile,Vagrantfile set filetype=ruby
 
+"
+au BufEnter *.tsx set filetype=typescript
+
 " json filetypes
 au BufRead,BufNewFile .babelrc,.eslintrc,.stylelintrc set filetype=json
 
 " hard-wrap markdown files
-au BufRead,BufNewFile *.md setl wrap tw=80 sw=2 sts=2 et
+au BufRead,BufNewFile *.md setl wrap linebreak showbreak=… sw=2 sts=2 et
 
 " two space indents for package.json
 au BufRead,BufNewFile package.json setl sw=2 sts=2 et
@@ -151,7 +155,6 @@ au FileType ruby setl sw=2 sts=2 et
 
 " interpret css as scss
 au FileType css set ft=scss
-
 
 
 " --- PLUGINS ------------------------
@@ -185,20 +188,17 @@ let g:multi_cursor_skip_key = '<c-x>'
 let g:multi_cursor_quit_key = '<esc>'
 
 " neomake
-let g:neomake_javascript_enabled_makers = [ 'eslint' ]
-let g:neomake_jsx_enabled_makers = [ 'eslint' ]
-autocmd! BufWritePost * Neomake
+call neomake#configure#automake('w')
+" let g:neomake_typescript_enabled_makers = ['eslint_d']
+" let g:neomake_typescript_tsx_enabled_makers = ['eslint_d']
 
 " nerdtree - increased width, show hidden files
 let g:NERDTreeWinSize = 40
 let g:NERDTreeShowHidden = 1
 
-" ultisnips
-let g:UltiSnipsSnippetsDir = '~/.nvim/snips'
-let g:UltiSnipsEditSplit = 'vertical'
-let g:UltiSnipsExpandTrigger = '<c-s>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+" terraform
+let g:terraform_fmt_on_save = 1
+let g:terraform_fold_sections = 1
 
 
 
@@ -230,25 +230,25 @@ noremap! <c-j> <esc><c-w>j
 noremap! <c-k> <esc><c-w>k
 noremap! <c-l> <esc><c-w>l
 
-" easier tab switching
-noremap <m-1> 1gt
-noremap <m-2> 2gt
-noremap <m-3> 3gt
-noremap <m-4> 4gt
-noremap <m-5> 5gt
-noremap <m-6> 6gt
-noremap <m-7> 7gt
-noremap <m-8> 8gt
-noremap <m-9> 9gt
-noremap! <m-1> <esc>1gt
-noremap! <m-2> <esc>2gt
-noremap! <m-3> <esc>3gt
-noremap! <m-4> <esc>4gt
-noremap! <m-5> <esc>5gt
-noremap! <m-6> <esc>6gt
-noremap! <m-7> <esc>7gt
-noremap! <m-8> <esc>8gt
-noremap! <m-9> <esc>9gt
+" " easier tab switching
+" noremap <m-1> 1gt
+" noremap <m-2> 2gt
+" noremap <m-3> 3gt
+" noremap <m-4> 4gt
+" noremap <m-5> 5gt
+" noremap <m-6> 6gt
+" noremap <m-7> 7gt
+" noremap <m-8> 8gt
+" noremap <m-9> 9gt
+" noremap! <m-1> <esc>1gt
+" noremap! <m-2> <esc>2gt
+" noremap! <m-3> <esc>3gt
+" noremap! <m-4> <esc>4gt
+" noremap! <m-5> <esc>5gt
+" noremap! <m-6> <esc>6gt
+" noremap! <m-7> <esc>7gt
+" noremap! <m-8> <esc>8gt
+" noremap! <m-9> <esc>9gt
 
 " easier buffer resizing
 noremap < 5<c-w><
