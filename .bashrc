@@ -46,8 +46,8 @@ if [ -d "$HOME/.rbenv" ]; then
 	eval "$(rbenv init -)"
 fi
 
-if [ -d "$HOME/godev" ]; then
-	export GOPATH="$HOME/godev"
+if [ -d "$HOME/go" ]; then
+	export GOPATH="$HOME/go"
 	export PATH="$GOPATH/bin:$PATH"
 fi
 
