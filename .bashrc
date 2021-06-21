@@ -35,6 +35,7 @@ export GIT_PS1_SHOWUPSTREAM='auto'
 PS1='\n\[\e[0;3${c}m\]\u\[\e[0m\] @ \[\e[1;3${c}m\]${host}\[\e[0m\] \[\e[1;36m\]\w\[\e[0m\] $(__git_ps1 "[%s]") \n\$ '
 
 export PATH="node_modules/.bin:$PATH"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 if [ -d "$HOME/.bin" ]; then
 	export PATH="$HOME/.bin:$PATH"
