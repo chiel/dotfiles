@@ -6,10 +6,7 @@ export LC_ALL=en_GB.UTF-8
 export GPG_TTY=$(tty)
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
-alias k='kubectl -n production'
-alias ka='kubectl -n acceptance'
-alias kc='kubectl -n cache'
-alias ks='kubectl -n staging'
+alias k='kubectl'
 alias l='ls -AFhl --color=always'
 
 # os x is a special little snowflake... (aka stupid)
