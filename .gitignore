@@ -1,4 +1,6 @@
-.config/yarn
+.config/*
+!.config/nvim
+!.config/termite
 .DS_Store
 .netrwhist
 .xmonad/xmonad-x86_64-linux
