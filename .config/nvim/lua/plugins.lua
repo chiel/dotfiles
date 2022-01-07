@@ -1,4 +1,2 @@
-require('packer').startup(function()
-	use 'wbthomason/packer.nvim'
-	use 'folke/tokyonight.nvim'
-end)
+require('plugins/init')
+require('plugins/telescope')
