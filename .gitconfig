@@ -1,7 +1,7 @@
 [user]
 	name = Chiel Kunkels
 	email = chiel@kunkels.me
-	signingkey = 21693C2E79BCF7EF
+	signingkey = D8A983C5A93D3460
 
 [core]
 	excludesfile = ~/.gitignore.global
