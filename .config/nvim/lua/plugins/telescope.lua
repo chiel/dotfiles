@@ -2,6 +2,9 @@ map('', '<c-p>', ':Telescope find_files<cr>')
 
 require('telescope').setup{
 	defaults = {
+		file_ignore_patterns = {
+			"^.git/",
+		},
 		mappings = {
 			i = {
 				['<esc>'] = 'close',
