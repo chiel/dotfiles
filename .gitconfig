@@ -90,3 +90,6 @@
 
 [commit]
 	gpgsign = true
+
+[init]
+	defaultBranch = master
