@@ -6,6 +6,7 @@ export LC_ALL=en_GB.UTF-8
 export GPG_TTY=$(tty)
 [ "$TERM" = "xterm" ] && export TERM="xterm-256color"
 
+alias dc='docker compose'
 alias k='kubectl'
 alias l='ls -AFhl --color=always'
 
