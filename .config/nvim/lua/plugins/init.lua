@@ -3,6 +3,11 @@ require('packer').startup(function()
 	use 'folke/tokyonight.nvim'
 
 	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate',
+	}
+
+	use {
 		'nvim-telescope/telescope.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
 	}
