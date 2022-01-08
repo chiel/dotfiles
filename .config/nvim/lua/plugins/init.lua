@@ -2,6 +2,8 @@ require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'folke/tokyonight.nvim'
 
+	use 'kyazdani42/nvim-web-devicons'
+
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
