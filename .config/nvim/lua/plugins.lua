@@ -1,4 +1,5 @@
 require('plugins/init')
 require('plugins/gitsigns')
+require('plugins/nvim-tree')
 require('plugins/telescope')
 require('plugins/treesitter')

@@ -24,4 +24,10 @@ require('packer').startup(function()
 		ft = 'go',
 		run = ':GoUpdateBinaries',
 	}
+
+	use {
+		'kyazdani42/nvim-tree.lua',
+		cmd = { 'NvimTreeFindFile', 'NvimTreeToggle' },
+		opt = true,
+	}
 end)
