@@ -49,3 +49,9 @@ map('i', '<up>', '<nop>')
 map('i', '<down>', '<nop>')
 map('i', '<left>', '<nop>')
 map('i', '<right>', '<nop>')
+
+
+---- PLUGINS
+map('', '<leader>n', ':NvimTreeToggle<cr>')
+map('', '<leader>m', ':NvimTreeFindFile<cr>')
+map('', '<c-p>', ':Telescope find_files<cr>')
