@@ -2,6 +2,7 @@ require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'folke/tokyonight.nvim'
 
+	use 'tpope/vim-surround'
 	use 'kyazdani42/nvim-web-devicons'
 
 	use {
