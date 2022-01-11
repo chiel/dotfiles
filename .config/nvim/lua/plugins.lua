@@ -5,6 +5,10 @@ require('packer').startup(function()
 	use 'tpope/vim-surround'
 	use 'kyazdani42/nvim-web-devicons'
 
+	vim.g.delimitMate_expand_cr = 1
+	vim.g.delimitMate_expand_space = 1
+	use 'Raimondi/delimitMate'
+
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
