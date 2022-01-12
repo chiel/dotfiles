@@ -52,6 +52,8 @@ map('i', '<right>', '<nop>')
 
 
 ---- PLUGINS
+map('n', '<c-\\>', ':CommentToggle<cr>')
+map('v', '<c-\\>', ':\'<,\'>CommentToggle<cr>')
 map('', '<leader>n', ':NvimTreeToggle<cr>')
 map('', '<leader>m', ':NvimTreeFindFile<cr>')
 map('', '<c-p>', ':Telescope find_files<cr>')

@@ -10,6 +10,16 @@ require('packer').startup(function()
 	use 'Raimondi/delimitMate'
 
 	use {
+		'terrortylor/nvim-comment',
+		cmd = { 'CommentToggle' },
+		config = function()
+			require('nvim_comment').setup{
+				comment_empty = false,
+			}
+		end,
+	}
+
+	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 		config = function()
