@@ -13,9 +13,7 @@ require('packer').startup(function()
 		'terrortylor/nvim-comment',
 		cmd = { 'CommentToggle' },
 		config = function()
-			require('nvim_comment').setup{
-				comment_empty = false,
-			}
+			require('plugins/comment')
 		end,
 	}
 
