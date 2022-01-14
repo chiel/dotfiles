@@ -131,4 +131,11 @@ require('packer').startup(function()
 			}
 		end,
 	}
+
+	use {
+		'neovim/nvim-lspconfig',
+		config = function()
+			require('plugins/lspconfig')
+		end,
+	}
 end)
