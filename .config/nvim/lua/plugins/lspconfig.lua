@@ -16,9 +16,6 @@ require('lspconfig').efm.setup{
 		'typescript',
 		'typescriptreact',
 	},
-	init_options = {
-		documentFormatting = true,
-	},
 	settings = {
 		rootMarkers = { '.git/' },
 		languages = {
