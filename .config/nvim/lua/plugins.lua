@@ -9,6 +9,12 @@ require('packer').startup(function()
 	vim.g.delimitMate_expand_space = 1
 	use 'Raimondi/delimitMate'
 
+	vim.g.VM_maps = {
+		['Find Under'] = '<c-d>',
+		['Find Subword Under'] = '<c-d>',
+	}
+	use 'mg979/vim-visual-multi'
+
 	use {
 		'terrortylor/nvim-comment',
 		cmd = { 'CommentToggle' },
