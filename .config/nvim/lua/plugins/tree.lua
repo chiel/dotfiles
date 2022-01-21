@@ -10,6 +10,9 @@ vim.g.nvim_tree_special_files = {}
 
 require('nvim-tree').setup{
 	auto_close = true,
+	git = {
+		ignore = false,
+	},
 	view = {
 		signcolumn = 'no',
 	},
