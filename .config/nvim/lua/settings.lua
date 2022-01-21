@@ -1,8 +1,3 @@
--- colorscheme
-vim.g.tokyonight_style = 'night'
-vim.g.tokyonight_transparent = true
-vim.cmd [[ colorscheme tokyonight ]]
-
 -- default encoding
 vim.o.encoding = 'utf-8'
 vim.o.bomb = false

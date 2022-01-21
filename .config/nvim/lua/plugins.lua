@@ -1,6 +1,11 @@
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
-	use 'folke/tokyonight.nvim'
+	use {
+		'folke/tokyonight.nvim',
+		config = function()
+			require('plugins/tokynight')
+		end
+	}
 
 	use 'tpope/vim-surround'
 	use 'kyazdani42/nvim-web-devicons'
@@ -14,6 +19,8 @@ require('packer').startup(function()
 		['Find Subword Under'] = '<c-d>',
 	}
 	use 'mg979/vim-visual-multi'
+
+	use 'editorconfig/editorconfig-vim'
 
 	use {
 		'terrortylor/nvim-comment',
