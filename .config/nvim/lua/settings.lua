@@ -7,6 +7,9 @@ vim.o.shiftwidth = 2
 vim.o.tabstop = 2
 vim.o.expandtab = false
 
+-- use system clipboard
+vim.o.clipboard = 'unnamed,unnamedplus'
+
 -- no line wrap
 vim.o.wrap = false
 
