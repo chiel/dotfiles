@@ -18,6 +18,9 @@
 [branch "master"]
 	rebase = true
 
+[init]
+	defaultBranch = master
+
 [rerere]
 	enabled = true
 
