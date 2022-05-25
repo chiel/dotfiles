@@ -36,7 +36,6 @@ require('packer').startup(function()
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
-		commit = 'c80715f883b8c7963782973b23297c5dec7924be', -- master is broken
 		config = function()
 			require('plugins/treesitter')
 		end,
