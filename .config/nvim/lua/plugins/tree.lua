@@ -1,11 +1,3 @@
-vim.g.nvim_tree_git_hl = 1
-vim.g.nvim_tree_show_icons = {
-	files = 1,
-	folder_arrows = 1,
-	folders = 1,
-	git = 0,
-}
-vim.g.nvim_tree_special_files = {}
 
 require('nvim-tree').setup{
 	actions = {
@@ -17,6 +9,18 @@ require('nvim-tree').setup{
 	},
 	git = {
 		ignore = false,
+	},
+	renderer = {
+		highlight_git = true,
+		icons = {
+			show = {
+				file = true,
+				folder = true,
+				folder_arrow = true,
+				git = false,
+			},
+		},
+		special_files = {},
 	},
 	view = {
 		signcolumn = 'no',
