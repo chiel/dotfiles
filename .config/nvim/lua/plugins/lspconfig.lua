@@ -1,6 +1,7 @@
 local efmls = require 'efmls-configs'
 local eslint_d = require 'efmls-configs.linters.eslint_d'
 local eslint_d_fmt = require 'efmls-configs.formatters.eslint_d'
+local stylua = require 'efmls-configs.formatters.stylua'
 
 local function on_attach(client)
 	print('Attached to ' .. client.name)
@@ -19,6 +20,9 @@ efmls.setup {
 	javascriptreact = {
 		linter = eslint_d,
 		formatter = eslint_d_fmt,
+	},
+	lua = {
+		formatter = stylua,
 	},
 	typescript = {
 		linter = eslint_d,
