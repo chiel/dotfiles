@@ -22,9 +22,6 @@ require('packer').startup(function()
 
 	use 'editorconfig/editorconfig-vim'
 
-	vim.g.terraform_fmt_on_save = 1
-	use 'hashivim/vim-terraform'
-
 	use {
 		'terrortylor/nvim-comment',
 		cmd = { 'CommentToggle' },
