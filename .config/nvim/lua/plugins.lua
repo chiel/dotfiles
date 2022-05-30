@@ -3,8 +3,8 @@ require('packer').startup(function()
 	use {
 		'folke/tokyonight.nvim',
 		config = function()
-			require('plugins/tokynight')
-		end
+			require 'plugins/tokynight'
+		end,
 	}
 
 	use 'tpope/vim-surround'
@@ -29,7 +29,7 @@ require('packer').startup(function()
 		'terrortylor/nvim-comment',
 		cmd = { 'CommentToggle' },
 		config = function()
-			require('plugins/comment')
+			require 'plugins/comment'
 		end,
 	}
 
@@ -37,7 +37,7 @@ require('packer').startup(function()
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 		config = function()
-			require('plugins/treesitter')
+			require 'plugins/treesitter'
 		end,
 	}
 
@@ -46,7 +46,7 @@ require('packer').startup(function()
 		requires = { 'nvim-lua/plenary.nvim' },
 		cmd = { 'Telescope' },
 		config = function()
-			require('plugins/telescope')
+			require 'plugins/telescope'
 		end,
 	}
 
@@ -54,7 +54,7 @@ require('packer').startup(function()
 		'lewis6991/gitsigns.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
 		config = function()
-			require('plugins/gitsigns')
+			require 'plugins/gitsigns'
 		end,
 	}
 
@@ -68,7 +68,7 @@ require('packer').startup(function()
 		'kyazdani42/nvim-tree.lua',
 		cmd = { 'NvimTreeToggle', 'NvimTreeFindFile' },
 		config = function()
-			require('plugins/tree')
+			require 'plugins/tree'
 		end,
 	}
 
@@ -76,7 +76,7 @@ require('packer').startup(function()
 		'chiel/efmls-configs-nvim',
 		requires = { 'neovim/nvim-lspconfig' },
 		config = function()
-			require('plugins/lspconfig')
+			require 'plugins/lspconfig'
 		end,
 	}
 end)
