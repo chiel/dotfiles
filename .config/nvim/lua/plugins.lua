@@ -73,7 +73,8 @@ require('packer').startup(function()
 	}
 
 	use {
-		'neovim/nvim-lspconfig',
+		'chiel/efmls-configs-nvim',
+		requires = { 'neovim/nvim-lspconfig' },
 		config = function()
 			require('plugins/lspconfig')
 		end,
