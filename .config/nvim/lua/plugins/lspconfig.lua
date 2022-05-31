@@ -2,11 +2,7 @@ local efmls = require 'efmls-configs'
 local eslint_d = require 'efmls-configs.linters.eslint_d'
 local eslint_d_fmt = require 'efmls-configs.formatters.eslint_d'
 local stylua = require 'efmls-configs.formatters.stylua'
-
-local terraform_fmt = {
-	formatCommand = 'terraform fmt -',
-	formatStdin = true,
-}
+local terraform_fmt = require 'efmls-configs.formatters.terraform_fmt'
 
 local function on_attach(client)
 	print('Attached to ' .. client.name)
