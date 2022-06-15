@@ -7,6 +7,7 @@ export GPG_TTY=$(tty)
 alias dc='docker compose'
 alias k='kubectl'
 alias l='ls -AFhl --color=always'
+alias tf='terraform'
 
 # os x is a special little snowflake... (aka stupid)
 if [ `uname` = 'Darwin' ]; then
