@@ -1,7 +1,6 @@
 [user]
 	name = Chiel Kunkels
 	email = chiel@kunkels.me
-	signingkey = D8A983C5A93D3460
 
 [core]
 	excludesfile = ~/.gitignore.global
@@ -93,9 +92,6 @@
 
 [blame]
 	date = relative
-
-[commit]
-	gpgsign = true
 
 [init]
 	defaultBranch = master
