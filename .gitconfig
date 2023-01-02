@@ -15,6 +15,9 @@
 [branch]
 	autosetuprebase = always
 
+[branch "main"]
+	rebase = true
+
 [branch "master"]
 	rebase = true
 
