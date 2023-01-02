@@ -3,7 +3,7 @@ require('packer').startup(function()
 	use {
 		'folke/tokyonight.nvim',
 		config = function()
-			require 'plugins/tokynight'
+			require 'plugins/tokyonight'
 		end,
 	}
 
