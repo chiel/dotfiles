@@ -7,7 +7,9 @@ require('packer').startup(function()
 		end,
 	}
 
+	use 'tpope/vim-fugitive'
 	use 'tpope/vim-surround'
+	use 'tpope/vim-unimpaired'
 	use 'kyazdani42/nvim-web-devicons'
 
 	vim.g.delimitMate_expand_cr = 1
