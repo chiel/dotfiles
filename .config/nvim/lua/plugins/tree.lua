@@ -23,5 +23,6 @@ require('nvim-tree').setup {
 	},
 	view = {
 		signcolumn = 'no',
+		width = 40,
 	},
 }
