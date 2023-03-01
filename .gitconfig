@@ -23,6 +23,9 @@
 [init]
 	defaultBranch = master
 
+[fetch]
+	prune = true
+
 [rerere]
 	enabled = true
 
