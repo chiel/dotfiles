@@ -1,6 +1,4 @@
--- default encoding
-vim.o.encoding = 'utf-8'
-vim.o.bomb = false
+local autocmd = vim.api.nvim_create_autocmd
 
 -- two space tabs by default
 vim.o.shiftwidth = 2
@@ -10,13 +8,14 @@ vim.o.expandtab = false
 -- use system clipboard
 vim.o.clipboard = 'unnamed,unnamedplus'
 
+-- disable mouse
+vim.o.mouse = ''
+
 -- no line wrap
 vim.o.wrap = false
 
--- no backup/swap files
-vim.o.backup = false
+-- no swap files
 vim.o.swapfile = false
-vim.o.writebackup = false
 
 -- split windows right and below
 vim.o.splitright = true
@@ -30,18 +29,18 @@ vim.o.smartcase = true
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
 
--- disable folds entirely
-vim.o.foldenable = true
-
 -- always show the sign column to avoid jumping
 vim.o.signcolumn = 'yes'
 
 -- highlight current line only for active window
-vim.cmd([[
-	au BufWinEnter * setlocal cursorline
-	au WinEnter * setlocal cursorline
-	au WinLeave * setlocal nocursorline
-]])
+autocmd({ 'BufWinEnter', 'WinEnter' }, {
+	pattern = '*',
+	command = 'setlocal cursorline',
+})
+autocmd('WinLeave', {
+	pattern = '*',
+	command = 'setlocal nocursorline',
+})
 
 -- show invisibles
 vim.o.list = true
