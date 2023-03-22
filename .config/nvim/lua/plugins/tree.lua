@@ -1,4 +1,4 @@
-require('nvim-tree').setup {
+require('nvim-tree').setup({
 	actions = {
 		open_file = {
 			window_picker = {
@@ -25,4 +25,4 @@ require('nvim-tree').setup {
 		signcolumn = 'no',
 		width = 40,
 	},
-}
+})

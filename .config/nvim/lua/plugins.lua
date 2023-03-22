@@ -1,81 +1,81 @@
 require('packer').startup(function()
-	use 'wbthomason/packer.nvim'
-	use {
+	use('wbthomason/packer.nvim')
+	use({
 		'folke/tokyonight.nvim',
 		config = function()
-			require 'plugins/tokyonight'
+			require('plugins/tokyonight')
 		end,
-	}
+	})
 
-	use 'tpope/vim-fugitive'
-	use 'tpope/vim-surround'
-	use 'tpope/vim-unimpaired'
-	use 'kyazdani42/nvim-web-devicons'
+	use('tpope/vim-fugitive')
+	use('tpope/vim-surround')
+	use('tpope/vim-unimpaired')
+	use('kyazdani42/nvim-web-devicons')
 
 	vim.g.delimitMate_expand_cr = 1
 	vim.g.delimitMate_expand_space = 1
-	use 'Raimondi/delimitMate'
+	use('Raimondi/delimitMate')
 
 	vim.g.VM_maps = {
 		['Find Under'] = '<c-d>',
 		['Find Subword Under'] = '<c-d>',
 	}
-	use 'mg979/vim-visual-multi'
+	use('mg979/vim-visual-multi')
 
-	use 'editorconfig/editorconfig-vim'
+	use('editorconfig/editorconfig-vim')
 
-	use {
+	use({
 		'terrortylor/nvim-comment',
 		cmd = { 'CommentToggle' },
 		config = function()
-			require 'plugins/comment'
+			require('plugins/comment')
 		end,
-	}
+	})
 
-	use {
+	use({
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate',
 		config = function()
-			require 'plugins/treesitter'
+			require('plugins/treesitter')
 		end,
-	}
+	})
 
-	use {
+	use({
 		'nvim-telescope/telescope.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
 		cmd = { 'Telescope' },
 		config = function()
-			require 'plugins/telescope'
+			require('plugins/telescope')
 		end,
-	}
+	})
 
-	use {
+	use({
 		'lewis6991/gitsigns.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
 		config = function()
-			require 'plugins/gitsigns'
+			require('plugins/gitsigns')
 		end,
-	}
+	})
 
-	use {
+	use({
 		'fatih/vim-go',
 		ft = 'go',
 		run = ':GoUpdateBinaries',
-	}
+	})
 
-	use {
+	use({
 		'kyazdani42/nvim-tree.lua',
 		cmd = { 'NvimTreeToggle', 'NvimTreeFindFile' },
 		config = function()
-			require 'plugins/tree'
+			require('plugins/tree')
 		end,
-	}
+	})
 
-	use {
+	use({
 		'creativenull/efmls-configs-nvim',
 		requires = { 'neovim/nvim-lspconfig' },
 		config = function()
-			require 'plugins/lspconfig'
+			require('plugins/lspconfig')
 		end,
-	}
+	})
 end)

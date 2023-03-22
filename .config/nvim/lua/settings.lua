@@ -37,18 +37,18 @@ vim.o.foldenable = true
 vim.o.signcolumn = 'yes'
 
 -- highlight current line only for active window
-vim.cmd [[
+vim.cmd([[
 	au BufWinEnter * setlocal cursorline
 	au WinEnter * setlocal cursorline
 	au WinLeave * setlocal nocursorline
-]]
+]])
 
 -- show invisibles
 vim.o.list = true
 vim.o.listchars = 'tab:│ ,trail:·,extends:❯,precedes:❮'
 
 -- trim whitespace on save
-vim.cmd [[
+vim.cmd([[
 	au BufWritePre * :call StripWhitespace()
 	function! StripWhitespace ()
 		let save_cursor = getpos(".")
@@ -57,4 +57,4 @@ vim.cmd [[
 		call setpos('.', save_cursor)
 		call setreg('/', old_query)
 	endfunction
-]]
+]])
