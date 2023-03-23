@@ -1,4 +1,3 @@
-require('init')
 require('options')
+require('keymaps')
 require('plugins')
-require('keybinds')
