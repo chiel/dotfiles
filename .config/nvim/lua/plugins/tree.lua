@@ -5,6 +5,7 @@ u.map('', '<leader>m', ':NvimTreeFindFile<cr>')
 
 return {
 	'kyazdani42/nvim-tree.lua',
+	require = { 'nvim-tree/nvim-web-devicons' },
 	cmd = { 'NvimTreeToggle', 'NvimTreeFindFile' },
 	config = function()
 		require('nvim-tree').setup({

@@ -6,7 +6,7 @@ u.nmap('<c-g>', ':Telescope git_commits<cr>')
 
 return {
 	'nvim-telescope/telescope.nvim',
-	requires = { 'nvim-lua/plenary.nvim' },
+	requires = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons' },
 	cmd = { 'Telescope' },
 	config = function()
 		require('telescope').setup({

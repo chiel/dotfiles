@@ -2,7 +2,6 @@ require('packer').startup(function(use)
 	use('wbthomason/packer.nvim')
 
 	use('editorconfig/editorconfig-vim')
-	use('kyazdani42/nvim-web-devicons')
 	use('tpope/vim-fugitive')
 	use('tpope/vim-surround')
 	use('tpope/vim-unimpaired')
