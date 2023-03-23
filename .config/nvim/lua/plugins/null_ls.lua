@@ -15,6 +15,7 @@ return {
 
 				-- formatting
 				b.formatting.eslint_d,
+				b.formatting.stylua,
 			},
 		})
 	end,
