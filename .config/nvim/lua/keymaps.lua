@@ -29,8 +29,3 @@ u.nmap('<leader><space>', ':noh<cr>')
 -- make tab indent/undent (is that a word?)
 u.xmap('<tab>', '>gv')
 u.xmap('<s-tab>', '<gv')
-
--- plugins
-u.map('', '<leader>n', ':NvimTreeToggle<cr>')
-u.map('', '<leader>m', ':NvimTreeFindFile<cr>')
-u.map('', '<c-p>', ':Telescope find_files<cr>')

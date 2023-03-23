@@ -1,9 +1,10 @@
-require('tokyonight').setup({
-	style = 'night',
-	styles = {
-		comments = { italic = false },
-		keywords = { italic = false },
-	},
-})
+return {
+	'folke/tokyonight.nvim',
+	config = function()
+		require('tokyonight').setup({
+			style = 'night',
+		})
 
-vim.cmd([[ colorscheme tokyonight ]])
+		vim.cmd.colorscheme('tokyonight')
+	end,
+}
