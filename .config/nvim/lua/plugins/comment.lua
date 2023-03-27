@@ -1,3 +1,8 @@
+local u = require('utils')
+
+u.nmap('<c-\\>', ':CommentToggle<cr>')
+u.xmap('<c-\\>', ':\'<,\'>CommentToggle<cr>')
+
 return {
 	'terrortylor/nvim-comment',
 	cmd = { 'CommentToggle' },
