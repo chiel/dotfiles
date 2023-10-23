@@ -1,10 +1,10 @@
 local u = require('utils')
 
-u.map('', '<leader>n', ':NvimTreeToggle<cr>')
-u.map('', '<leader>m', ':NvimTreeFindFile<cr>')
+u.nmap('<leader>n', ':NvimTreeToggle<cr>')
+u.nmap('<leader>m', ':NvimTreeFindFile<cr>')
 
 return {
-	'kyazdani42/nvim-tree.lua',
+	'nvim-tree/nvim-tree.lua',
 	require = { 'nvim-tree/nvim-web-devicons' },
 	cmd = { 'NvimTreeToggle', 'NvimTreeFindFile' },
 	config = function()

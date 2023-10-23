@@ -21,6 +21,16 @@ return {
 						['<c-k>'] = 'move_selection_previous',
 					},
 				},
+				vimgrep_arguments = {
+					'rg',
+					'--color=never',
+					'--no-heading',
+					'--with-filename',
+					'--line-number',
+					'--column',
+					'--smart-case',
+					'--trim',
+				},
 			},
 			pickers = {
 				find_files = {

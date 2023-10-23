@@ -33,10 +33,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
 				buffer = bufnr,
 				callback = function()
 					vim.lsp.buf.format({
+						bufnr = bufnr,
+						timeout_ms = 2000,
 						filter = function(client)
 							return disabled_formatters[client.name] ~= true
 						end,
-						bufnr = bufnr,
 					})
 				end,
 			})
