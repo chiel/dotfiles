@@ -1,4 +1,5 @@
 .config/*
+!.config/iterm2/com.googlecode.iterm2.plist
 !.config/nvim
 !.config/termite
 .DS_Store
