@@ -24,6 +24,7 @@ return {
 				'regex',
 				'ruby',
 				'scss',
+				'terraform',
 				'tsx',
 				'typescript',
 				'vim',
