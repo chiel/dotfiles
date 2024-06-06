@@ -12,6 +12,7 @@ return {
 
 				-- diagnostics
 				b.diagnostics.eslint_d,
+				b.diagnostics.hadolint,
 
 				-- formatting
 				b.formatting.prettier_d_slim,
