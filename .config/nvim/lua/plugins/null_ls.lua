@@ -14,7 +14,7 @@ return {
 				b.diagnostics.eslint_d,
 
 				-- formatting
-				b.formatting.eslint_d,
+				b.formatting.prettier_d_slim,
 				b.formatting.stylua,
 				b.formatting.terraform_fmt,
 			},
