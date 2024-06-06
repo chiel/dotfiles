@@ -15,6 +15,7 @@ return {
 				b.diagnostics.hadolint,
 
 				-- formatting
+				b.formatting.goimports,
 				b.formatting.prettier_d_slim,
 				b.formatting.stylua,
 				b.formatting.terraform_fmt,
