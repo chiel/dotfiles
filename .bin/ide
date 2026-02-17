@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+name="${1:-$(basename "$PWD")}"
+
+if tmux has-session -t "=$name" 2> /dev/null; then
+	tmux attach -t "=$name"
+	exit
+fi
+
+tmux new-session -d -s "$name" -n nvim -c "$PWD"
+tmux send-keys -t "$name:1" 'nvim' Enter
+tmux new-window -t "$name" -n shell -c "$PWD"
+tmux new-window -t "$name" -n claude -c "$PWD"
+tmux send-keys -t "$name:3" 'claude' Enter
+tmux new-window -t "$name:9" -n server -c "$PWD"
+tmux select-window -t "$name:1"
+tmux attach -t "$name"
