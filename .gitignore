@@ -1,7 +1,6 @@
 .config/*
-!.config/iterm2/com.googlecode.iterm2.plist
+!.config/alacritty
 !.config/nvim
-!.config/termite
 .DS_Store
 .netrwhist
 .xmonad/xmonad-x86_64-linux

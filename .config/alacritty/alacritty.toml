@@ -1,0 +1,22 @@
+[general]
+import = ["~/.config/alacritty/tokyonight_night.toml"]
+
+[window]
+padding.x = 0
+padding.y = 0
+opacity = 1.0
+
+[font]
+size = 16.0
+
+[font.offset]
+y = 8
+
+[font.normal]
+family = "Lekton Nerd Font Mono"
+style = "Regular"
+
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Command", action = "ToggleSimpleFullscreen" },
+]
