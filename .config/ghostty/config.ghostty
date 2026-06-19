@@ -1,0 +1,11 @@
+# ~/.config/ghostty/config
+
+theme = tokyonight_night
+
+font-family = DejaVuSansM Nerd Font Mono
+font-size = 14
+
+adjust-cell-height = 6
+
+window-padding-x = 10
+window-padding-y = 10

@@ -1,5 +1,6 @@
 .config/*
 !.config/alacritty
+!.config/ghostty
 !.config/nvim
 .DS_Store
 .netrwhist
