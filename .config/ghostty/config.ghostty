@@ -1,4 +1,5 @@
 macos-non-native-fullscreen = padded-notch
+window-inherit-working-directory = false
 
 theme = tokyonight_night
 
