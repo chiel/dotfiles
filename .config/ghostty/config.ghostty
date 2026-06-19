@@ -1,9 +1,9 @@
-# ~/.config/ghostty/config
+macos-non-native-fullscreen = padded-notch
 
 theme = tokyonight_night
 
 font-family = DejaVuSansM Nerd Font Mono
-font-size = 14
+font-size = 16
 
 adjust-cell-height = 6
 
